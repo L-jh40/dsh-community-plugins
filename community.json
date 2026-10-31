@@ -1749,8 +1749,8 @@
     "name": "便捷输入框",
     "nameEn": "Composer Ease",
     "author": "mengge237",
-    "description": "把 DSH 输入框做成 VS Code 手感：括号与引号自动配对（含全角），选中一段再打符号直接框住；补全弹层给本文词、语言词表、工作区文件与模型名，打满两个字符自动弹、Tab 接受、回车保持发送。标准 DSH bundle 插件：一条命令安装，不依赖第三方运行时、不写任何文件、不改宿主源码。语言词表在服务端半边，改过词表需重启一次 dsh web。",
-    "descriptionEn": "VS Code feel for the DSH composer: auto-pairs for brackets and quotes (full-width included), wrap-on-selection, and a completion popup over draft words, language tables, workspace files and model names — opens at two characters, Tab accepts, Enter still sends. Standard DSH bundle plugin: one-line install, no third-party runtime, no file writes, no host patches. Language tables live in the server half; restart dsh web after changing them.",
+    "description": "把 DSH 输入框做成 VS Code 手感：括号与引号自动配对，中文输入法打出的全角括号默认换成半角 ()（可在菜单关回全角）；选中一段再打符号直接框住；补全弹层给本文词、语言词表、工作区文件与模型名，中文候选来自词典（含领域词表、无写死长度上限），打满两个字符自动弹、Tab 接受、回车保持发送。标准 DSH bundle 插件：一条命令安装、不依赖第三方运行时、不写任何文件、不改宿主源码。语言词表在服务端半边，改过词表需重启一次 dsh web。",
+    "descriptionEn": "VS Code feel for the DSH composer: brackets and quotes auto-pair, full-width brackets typed through a Chinese IME default to half-width () and can be switched back in the menu; typing an opener over a selection wraps it; the completion popup offers draft words, language tables, workspace files and model names, with Chinese candidates taken from a dictionary (domain word list included, no hard length cap); opens at two characters, Tab accepts, Enter still sends. Standard DSH bundle plugin: one-line install, no third-party runtime, no file writes, no host patches. Language tables live in the server half; restart dsh web after changing them.",
     "repo": "https://github.com/mengge237/dsh-composer-ease",
     "category": "ui",
     "subcategory": "chat"
