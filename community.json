@@ -1743,5 +1743,17 @@
     "npm": "dsh-connect-minimaxcode",
     "category": "integration",
     "subcategory": "external-ai"
+  },
+  {
+    "id": "dsh-model-everything",
+    "name": "架构设计与代码的建模审查",
+    "nameEn": "Architecture Design & Code Modeling Review",
+    "author": "AmethystLuna",
+    "description": "面向架构设计的建模审查：Mermaid / PlantUML 源码直接画成架构图——分层布局、父子分组、结构预算、两版设计的包含关系比对、右栏白板；UML 图的读取与审查；状态机与协议的可执行判定；数据模型与迁移检查；有限词自动机判语言等价与包含并给出最短反例；并发声称挖掘后分派给能判定它的工具；依赖图审查；报告对比。同作者的 dsh-logicprobe 已被本插件取代：新工作从这里开始，旧插件只为既有安装保留。版本以 npm 字段为准，尚无社区使用数据。",
+    "descriptionEn": "Modeling review for architecture work: a Mermaid or PlantUML source drawn as an architecture diagram - layered layout, nested packages, structure budgets, a containment diff between two designs, and a sidebar whiteboard; UML diagrams read and reviewed; state machines and protocols decided as models; data models and migrations checked for coverage and rollback symmetry; finite-word automata deciding language equivalence and inclusion with the shortest witness; concurrency claims mined and routed to the checker that can decide them; dependency graphs audited; reports diffed. It supersedes the same author's dsh-logicprobe: start new work here, and the older plugin stays only for existing installs. The npm field carries the version; no community usage data yet.",
+    "repo": "https://github.com/AmethystLuna/dsh-model-everything",
+    "npm": "dsh-model-everything",
+    "category": "tools",
+    "subcategory": "dev"
   }
 ]
