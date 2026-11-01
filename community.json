@@ -1755,5 +1755,17 @@
     "npm": "dsh-model-everything",
     "category": "tools",
     "subcategory": "dev"
+  },
+  {
+    "id": "dsh-composer-ease",
+    "name": "便捷输入框",
+    "nameEn": "Composer Ease",
+    "author": "mengge237",
+    "repo": "https://github.com/mengge237/dsh-composer-ease",
+    "category": "ui",
+    "subcategory": "chat",
+    "description": "给 DSH Web 输入框加补全与编辑：括号与引号自动配对、选中一段再打符号直接框住、跳闭符、空对一次删两侧；补全弹层给本文词、语言词表、工作区文件与模型名，中文候选来自词典（含领域词表、无写死长度上限），打满两个字符自动弹、Tab 接受、回车保持发送。中文输入法打出的全角括号默认换成半角 ()（菜单可关回全角）。标准 DSH bundle 插件：一条命令安装、零第三方运行时、不写文件、不改宿主源码；语言词表在服务端，改过需重启 dsh web。",
+    "descriptionEn": "Composer for the DeepSeek Harness Web GUI: bracket and quote pairing, wrap-on-selection, closer skipping, empty-pair backspace, and a completion popup over draft words, language tables, workspace files and model ids. Full-width brackets typed through a Chinese IME are converted to half-width ().",
+    "npm": "dsh-composer-ease"
   }
 ]
