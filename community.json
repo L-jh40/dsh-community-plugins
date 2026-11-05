@@ -1200,4 +1200,16 @@
     "category": "knowledge",
     "subcategory": "qa"
   }
+,  {
+    "id": "dsh-character-cards",
+    "name": "角色卡",
+    "nameEn": "Character Cards",
+    "author": "sildo466",
+    "description": "为每个 DSH 会话绑定可切换的角色卡：身份、语气、代码风格与硬性约束按会话注入，支持默认卡、单会话覆盖、可视化编辑器与单文件导入导出。",
+    "descriptionEn": "Switchable identity cards for DSH sessions: identity, tone, code style, and hard constraints injected per session, with a default card, per-session overrides, a visual editor, and single-file import/export.",
+    "repo": "https://github.com/sildo466/dsh-character-cards",
+    "npm": "dsh-character-cards",
+    "category": "ui",
+    "subcategory": "chat"
+  }
 ]
