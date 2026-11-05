@@ -247,18 +247,6 @@
     "subcategory": "remote"
   },
   {
-    "id": "dsh-history-tree",
-    "name": "历史树",
-    "nameEn": "History Tree",
-    "author": "z953218350",
-    "description": "在聊天消息左侧提供 Codex 风格对话轮次时间线点阵与悬浮历史概览卡片，支持鱼眼放大动效与点击直达对应轮次。",
-    "descriptionEn": "Codex-style conversation turn timeline rail and hover overview cards beside chat messages, with fish-eye magnification and click-to-jump navigation.",
-    "repo": "https://github.com/z953218350/dsh-history-tree",
-    "npm": "dsh-history-tree",
-    "category": "ui",
-    "subcategory": "chat"
-  },
-  {
     "id": "dsh-gzip",
     "name": "dsh-gzip",
     "nameEn": "dsh-gzip",
@@ -340,17 +328,6 @@
     "subcategory": "notify"
   },
   {
-    "id": "dsh-logicprobe",
-    "name": "逻辑探针",
-    "nameEn": "Logic Probe",
-    "author": "AmethystLuna",
-    "description": "AI 智能体声明核查技能：枚举设计文档与重构计划中的每个可验证声明，对照代码库事实逐条核验；行为类声明升级为状态机/数据模型逻辑原语验证，支持前后回归、领域约束与并发风险挖掘，输出 file:line 证据。",
-    "descriptionEn": "Claim verification for AI coding agents: enumerate every verifiable claim in design docs and refactoring plans, verify against codebase facts, then escalate behavioral claims to state-machine/data-model logic-primitive verification with before/after regression, domain constraints, and concurrency risk mining.",
-    "repo": "https://github.com/AmethystLuna/logicprobe",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
     "id": "dsh-chatgpt-subscription",
     "name": "订阅管理",
     "nameEn": "Subscription Management",
@@ -407,18 +384,6 @@
     "npm": "dsh-workspace-api",
     "category": "knowledge",
     "subcategory": "qa"
-  },
-  {
-    "id": "dsh-llm-verifier",
-    "name": "LLM 裁判复核",
-    "nameEn": "LLM Verifier",
-    "author": "Aa728848",
-    "description": "DSH 原生可配置 LLM 裁判复核插件：成对比较、锦标赛择优、进度判定与自动验收门控（verifier_compare/select/track/current_session），A–T 标尺 + 期望评分，自带 Web 设置面板。",
-    "descriptionEn": "Configurable DSH-native LLM verifier plugin: pairwise comparison, pivot tournament selection, progress tracking and auto-acceptance gating (verifier_compare/select/track/current_session) with A-T scale scoring and a Web settings page.",
-    "repo": "https://github.com/Aa728848/dsh-llm-verifier",
-    "npm": "dsh-llm-verifier",
-    "category": "tools",
-    "subcategory": "model"
   },
   {
     "id": "dsh-session-id",
@@ -481,18 +446,6 @@
     "subcategory": "chat"
   },
   {
-    "id": "dsh-delete-message",
-    "name": "消息删除",
-    "nameEn": "Delete Message",
-    "author": "viplocco",
-    "description": "每条消息操作区的垃圾桶按钮：确认后经官方 surface-replace 契约将消息从模型上下文移除并从转录隐藏，原始日志不动、随时可恢复；覆盖用户/助手/注入行/工具调用/Think 卡，失败回合整窗清理与步骤级删除，删除前预检置灰、过渡动画，中英双语界面。",
-    "descriptionEn": "A trash icon in every message action bar: confirmed deletes remove the message from model context via the official surface-replace contract and hide it from the transcript, while raw logs stay intact and recoverable. Covers user/assistant/injected rows, tool calls and Think cards; whole-window cleanup of failed turns, step-level deletion, preflight graying, transition animations, bilingual zh/en UI.",
-    "repo": "https://github.com/viplocco/dsh-delete-message",
-    "npm": "dsh-delete-message",
-    "category": "ui",
-    "subcategory": "chat"
-  },
-  {
     "id": "dsh-notion-skill",
     "name": "Notion 集成",
     "nameEn": "Notion Skill",
@@ -516,18 +469,6 @@
     "subcategory": "access"
   },
   {
-    "id": "dsh-free-search",
-    "name": "免费搜索",
-    "nameEn": "Free Search",
-    "author": "DDDMUC",
-    "description": "无需 API key 的多引擎网络搜索：10 个引擎自动回退（Bing/DDG/AnySearch/SearXNG/Exa/Tavily/Keenable/Perplexity/DeepSeek 等——其中付费引擎需各自配置 API key）+ 时间过滤 + 8 个平台搜索 + Web 设置面板。安装时会接管宿主默认 web 搜索 provider（searchProvider=ddg 指向本插件），卸载时由 bundle patch 的 rollbackPatch 恢复原默认值。",
-    "descriptionEn": "Multi-engine web search without API keys: 10 engines with auto-fallback (Bing/DDG/AnySearch/SearXNG/Exa/Tavily/Keenable/Perplexity/DeepSeek — paid engines need their own API key) + time filtering + 8 platform searches + a web settings panel. Installing takes over the host default web search provider (searchProvider=ddg points at this plugin); uninstalling restores the previous default via the bundle patch rollbackPatch.",
-    "repo": "https://github.com/DDDMUC/dsh-free-search",
-    "npm": "dsh-free-search",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
     "id": "dsh-agent-plugins-market",
     "name": "Agent Plugins市场（兼容Claude Code Plugin）",
     "nameEn": "Agent Plugins Market",
@@ -549,53 +490,6 @@
     "repo": "https://github.com/termanli/dsh-fulltext-search",
     "category": "tools",
     "subcategory": "dev"
-  },
-  {
-    "id": "dsh-reasoning-effort",
-    "name": "思考强度配置器",
-    "nameEn": "Reasoning Effort",
-    "author": "Jamsharden",
-    "description": "为第三方 API 的模型提供可视化思考强度配置：支持自定义 reasoning effort 档位、Provider 默认强度、思考协议与参数开关，让 DSH 用户使用第三方 API 时也能调节思考强度。基于 pi-ai 0.85.1 重新生成 961 条官方模型档位数据，其中 737 个支持 reasoning，覆盖 GPT-6 Astra、DeepSeek V4 Pro/Flash、Kimi K3、GLM-5.3-Flash、Claude Opus 5 / Sonnet 5、Gemini 3.8 等模型；侧边栏入口样式与官方插件行对齐。兼容 DSH >=0.1.1-rc.2；DSH核验支持版本为 0.1.1-rc.2 与 0.1.2-alpha.1，插件在这两个版本下均可正常运行；卸载插件不会自动删除已写入 llm-pi-ai 的思考配置。",
-    "descriptionEn": "Adds a visual reasoning-effort editor for models served by third-party APIs, with custom levels, provider defaults, thinking-format and parameter controls, so DSH users can tune thinking strength when using external endpoints. Regenerated from pi-ai 0.85.1 with 961 official model-level entries, including 737 with reasoning support, covering models such as GPT-6 Astra, DeepSeek V4 Pro/Flash, Kimi K3, GLM-5.3-Flash, Claude Opus 5 / Sonnet 5, and Gemini 3.8; the sidebar entry is aligned with the official plugin row styling. Compatible with DSH >=0.1.1-rc.2; DSH verified support versions are 0.1.1-rc.2 and 0.1.2-alpha.1, and the plugin runs normally on both versions; uninstalling does not automatically remove reasoning settings written to llm-pi-ai.",
-    "repo": "https://github.com/Jamsharden/dsh-reasoning-effort",
-    "npm": "@megen-lebar/dsh-reasoning-effort",
-    "category": "tools",
-    "subcategory": "model"
-  },
-  {
-    "id": "dsh-codekin",
-    "name": "码灵",
-    "nameEn": "Codekin",
-    "author": "Nath-Vikky",
-    "description": "把 DSH 使用事件转化为码灵遭遇、收集与战斗的 Web 游戏插件：包含 25 只码灵、五类计算属性、8×8 指令三消、三只编队共享运行值、阶段伤害与防护、Boss 机制、捕捉养成、挂机补给和无尽塔；状态保存在 DSH 主目录的 codekinsave/state.json，首次启动会无损迁移旧的 tracewild/state.json，卸载后默认保留，不修改提示词、工具或模型请求。",
-    "descriptionEn": "A Web creature-collection RPG driven by DSH activity events, with 25 Codekin, five computing attributes, an 8×8 command-match battle system, shared squad runtime, phase damage and defense, Boss mechanics, capture, growth, idle supplies and an endless tower. State is stored in codekinsave/state.json under the DSH home directory; the former tracewild/state.json is migrated losslessly on first launch, and progress remains after uninstall by default. Prompts, tools and model requests are unchanged.",
-    "repo": "https://github.com/Nath-Vikky/dsh-codekin",
-    "category": "ui",
-    "subcategory": "panel"
-  },
-  {
-    "id": "dsh-archived-chats",
-    "name": "归档管理",
-    "nameEn": "Archive Management",
-    "author": "Ultronen",
-    "description": "管理已归档与未归档会话，支持搜索、预览、标签备注、工作区归档、ZIP 备份、选择操作、回收站恢复、空间与保留策略、来源分支和自动残留会话检查。",
-    "descriptionEn": "Manage archived and unarchived chats with search, previews, tags and notes, workspace archiving, ZIP backups, selected actions, a Recycle Bin, storage and retention, origins and branches, and automatic residual chat checks.",
-    "repo": "https://github.com/Ultronen/dsh-archived-chats",
-    "npm": "dsh-archived-chats",
-    "category": "ui",
-    "subcategory": "panel"
-  },
-  {
-    "id": "dsh-prompt-enhance",
-    "name": "提示词增强",
-    "nameEn": "Prompt Enhance",
-    "author": "rongxingda",
-    "description": "输入框一键提示词增强：把草稿改写为结构化提示词（角色与目标、可执行步骤、输出格式、验收标准、边界条件），支持前后对比、回填与一键撤销；不改变原意、不凭空编造需求。",
-    "descriptionEn": "One-click prompt enhancement in the composer: rewrites the draft into a structured prompt (role and goal, executable steps, output format, acceptance criteria, edge cases) with before/after preview, fill-back, and undo. Never changes intent, never fabricates requirements.",
-    "repo": "https://github.com/rongxingda/dsh-prompt-enhance",
-    "npm": "dsh-prompt-enhance",
-    "category": "ui",
-    "subcategory": "chat"
   },
   {
     "id": "dsh-completion-guard",
@@ -634,53 +528,6 @@
     "subcategory": "model"
   },
   {
-    "id": "dsh-linkdigest",
-    "name": "LinkDigest",
-    "nameEn": "LinkDigest",
-    "author": "jcaiagent7143-ui",
-    "description": "把小红书、抖音、TikTok、YouTube 或 X 链接转成文本：带时间戳的转写、屏幕文字、逐图描述与 OCR、正文与元数据。挂载托管的 MCP 服务，不需要本地浏览器和登录。",
-    "descriptionEn": "Turns a Xiaohongshu, Douyin, TikTok, YouTube or X link into text: transcript with timecodes, on-screen text, a description and OCR of every image, caption and metadata. Mounts a hosted MCP server over streamable HTTP, with no local browser or login step.",
-    "repo": "https://github.com/jcaiagent7143-ui/linkdigest-mcp",
-    "category": "integration",
-    "subcategory": "remote"
-  },
-  {
-    "id": "dsh-quote-followup",
-    "name": "引用追问",
-    "nameEn": "Quote Follow-up",
-    "author": "tr1v3r",
-    "description": "在 Web 对话里划选任意文本，一键以原生引用 chip 追加进输入框进行针对性追问；发送时自动展开为模型可读的 Markdown 引文，旧宿主降级为纯文本引用。",
-    "descriptionEn": "Select any text in the Web transcript and append it to the composer as a native quote chip for a targeted follow-up; chips expand into model-readable Markdown quotes on send, with a plain-text fallback on older hosts.",
-    "repo": "https://github.com/tr1v3r/dsh-quote-followup",
-    "npm": "dsh-quote-followup",
-    "category": "ui",
-    "subcategory": "chat"
-  },
-  {
-    "id": "plugin-effort-slider",
-    "name": "Effort Slider",
-    "nameEn": "Effort Slider",
-    "author": "mrSutivu",
-    "description": "输入框内的模型选择与推理强度滑杆二合一胶囊：带刻度拖拽、最高档流光动画，跟随主题变量，中英法三语。",
-    "descriptionEn": "Model picker and reasoning-effort slider in one composer pill: notched drag, max-effort shimmer, theme variables, English, French and Chinese labels.",
-    "repo": "https://github.com/mrSutivu/plugin-effort-slider",
-    "npm": "plugin-effort-slider",
-    "category": "ui",
-    "subcategory": "chat"
-  },
-  {
-    "id": "dsh-backup",
-    "name": "一键备份与恢复",
-    "nameEn": "One-command Backup & Restore",
-    "author": "xiaoyuyu6420",
-    "description": "一键备份与恢复 DSH 用户数据：定时自动备份（重启续跑）、每日/每周分级保留、分类型备份与 merge 恢复；sha256 校验与加固恢复（拒路径穿越/软链，失败自动回滚）；/backup doctor 从已知良好备份体检并定点修复会话日志；宿主起不来也能用的进程外救援台；升级前自动快照、损坏会话先隔离再入档；凭据默认脱敏进本地保险库，跨机迁移列出需重填项。",
-    "descriptionEn": "One-command backup and restore of DSH user data: scheduled auto-backup that survives restarts, daily/weekly tiered retention, per-type backup with merge restore; sha256 verification and hardened restore (path-traversal and symlink rejection, auto-rollback on failure); /backup doctor scans and repairs session logs from a known-good backup; an out-of-process rescue console that works even when the host will not boot; pre-upgrade snapshots and quarantine of corrupt session logs; credentials redacted into a local vault by default with a re-entry checklist for cross-machine moves.",
-    "repo": "https://github.com/xiaoyuyu6420/dsh-backup",
-    "npm": "@xiaoyuyu6420/dsh-backup",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
     "id": "dsh-taskfold",
     "name": "任务折叠",
     "nameEn": "Taskfold",
@@ -705,18 +552,6 @@
     "subcategory": "policy"
   },
   {
-    "id": "dsh-permission-rules",
-    "name": "声明式权限规则",
-    "nameEn": "Permission Rules",
-    "author": "PerryLink",
-    "description": "DeepSeek Harness 的 Claude Code 风格声明式权限规则与 Codex 风格进程级网络策略：按序 allow/deny/ask 规则匹配工具名、参数（glob/正则）、工作区路径与网络目标（域名/IP/端口/协议），内置本地 HTTP/CONNECT 代理管控 shell 子进程流量，三种网络模式映射官方沙箱预设，附会话日志审计、规则热重载与含规则编辑器的设置页。",
-    "descriptionEn": "Declarative Claude Code-style permission rules plus a Codex-style process-level network policy for DeepSeek Harness: ordered allow/deny/ask rules matching tool names, arguments (glob/regex), workspace paths and network targets (domain/IP/port/scheme), a built-in local HTTP/CONNECT proxy governing shell subprocess traffic, three network modes mapped onto the official sandbox presets, full session-log audit, HMR rule reload, and a settings page with a rule editor.",
-    "repo": "https://github.com/perrylink/dsh-permission-rules",
-    "npm": "dsh-permission-rules",
-    "category": "security",
-    "subcategory": "policy"
-  },
-  {
     "id": "dsh-whale-girl",
     "name": "鲸鱼娘·灵动挂件",
     "nameEn": "Whale Girl Widget",
@@ -726,18 +561,6 @@
     "repo": "https://github.com/nickkkkkk123123/dsh-whale-girl",
     "category": "ui",
     "subcategory": "panel"
-  },
-  {
-    "id": "dsh-desktop-shell",
-    "name": "DSH 桌面外壳",
-    "nameEn": "DSH Desktop Shell",
-    "author": "RINGOLINK",
-    "description": "仅 Windows。把 DSH WebUI 变成本机桌面应用：预编译启动器（WebView2 独立窗口 + 托盘常驻，关闭窗口最小化到托盘，托盘右键才退出）。安装会在 %USERPROFILE%\\dsh-desktop 写入 DSHLauncher.exe 与 WebView2 DLL，并创建桌面/开始菜单快捷方式；登录自启默认关闭，需要时在设置里开启。启动器未托管后端时，「重启后端」会对整个后端进程树执行 taskkill /T /F 强杀再按原参数拉起（会中断进行中的会话）。设置里提供安装/修复、重建快捷方式、登录自启开关、清理安装（删除上述文件与快捷方式）与重启。",
-    "descriptionEn": "Windows only. Turns the DSH Web UI into a desktop app: a prebuilt launcher with its own WebView2 window and tray icon (closing the window hides it; only the tray menu exits and stops the backend). Installing writes DSHLauncher.exe and the WebView2 DLLs to %USERPROFILE%\\dsh-desktop and creates desktop/start-menu shortcuts; sign-in autostart is off by default and can be enabled in the settings row. When no launcher manages the backend, restarting it force-kills the whole backend process tree (taskkill /T /F) and relaunches it with the original arguments, interrupting in-flight sessions. The settings row offers install/repair, shortcut rebuild, the autostart switch, removal (deletes those files and shortcuts) and restart.",
-    "repo": "https://github.com/RINGOLINK/dsh-desktop-shell",
-    "npm": "dsh-desktop-shell",
-    "category": "tools",
-    "subcategory": "dev"
   },
   {
     "id": "dsh-delete-session",
@@ -750,137 +573,6 @@
     "npm": "dsh-delete-session",
     "category": "utility",
     "subcategory": "cleanup"
-  },
-  {
-    "id": "dsh-tty",
-    "name": "终端面板",
-    "nameEn": "Terminal Panel",
-    "author": "hyzyn",
-    "description": "侧边栏「终端」大弹窗：xterm.js + PTY 全交互终端，多标签与断线自动重连，可选 tmux 会话持久化（宿主重启后恢复现场）；ssh2 原生 SSH 标签（agent forwarding、主机指纹 TOFU 钉扎），SFTP 上传下载与本地/远程端口转发隧道；agent 侧配套 tty_* / sftp_* / tunnel_* 工具。",
-    "descriptionEn": "A full terminal panel in the sidebar: xterm.js with a real PTY, multiple tabs, automatic reconnect and optional tmux-backed session persistence that survives host restarts; native ssh2 SSH tabs with agent forwarding and TOFU host-key pinning, SFTP transfer, and local/remote port-forward tunnels, with matching tty_* / sftp_* / tunnel_* tools for the agent.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/tty",
-    "npm": "@hyzyn/dsh-tty",
-    "category": "ui",
-    "subcategory": "terminal"
-  },
-  {
-    "id": "dsh-docker",
-    "name": "容器面板",
-    "nameEn": "Container Panel",
-    "author": "hyzyn",
-    "description": "Docker 容器面板：本机或 SSH 目标上的容器列表（含 Compose 项目视图）、启停删、日志与统计实时跟随、事件活动条、镜像与网络/卷详情。默认只读，变更操作与 docker exec 需在设置里显式开启，agent 侧配套只读优先的 docker_* 工具。",
-    "descriptionEn": "A Docker panel for local or SSH targets: container lists with a Compose project view, start/stop/remove, live log and stats streaming, an events feed, plus image, network and volume details. Read-only by default - mutations and docker exec need an explicit settings switch - with read-only-first docker_* tools for the agent.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/docker",
-    "npm": "@hyzyn/dsh-docker",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
-    "id": "dsh-codegraph",
-    "name": "代码图谱",
-    "nameEn": "Codegraph",
-    "author": "hyzyn",
-    "description": "Codegraph 集成：在设置 → 插件里查看索引状态、搜索符号、查看 callers/callees/impact，一键增量 sync 或全量重建；自动托管 codegraph MCP 服务器行并把 cwd 对齐默认项目路径，模型可直接用 mcp__codegraph__* 查询代码。",
-    "descriptionEn": "Codegraph integration: inspect index status, search symbols and walk callers/callees/impact from the settings card, with one-click incremental sync or full rebuild; manages the codegraph MCP server row and aligns its cwd with the default project so the model can query code through mcp__codegraph__*.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/codegraph",
-    "npm": "@hyzyn/dsh-codegraph",
-    "category": "tools",
-    "subcategory": "context"
-  },
-  {
-    "id": "dsh-env",
-    "name": "环境变量与密钥管理",
-    "nameEn": "Env & Secrets Manager",
-    "author": "hyzyn",
-    "description": "图形化管理环境变量与密钥：托管 ~/.dsh/env.yml 的区块，支持普通值与 js: 前缀表达式，密钥明文默认存入官方凭据存储而 env 文件只留清单；保存后写入当前进程环境，供宿主与后续子进程使用。",
-    "descriptionEn": "Graphical environment-variable and secret management: manages the managed block of ~/.dsh/env.yml with plain values and js: expression prefixes, keeps secret plaintext in the official credential store while the env file holds only the manifest, and applies changes to the running process for the host and later subprocesses.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/env",
-    "npm": "@hyzyn/dsh-env",
-    "category": "security",
-    "subcategory": "access"
-  },
-  {
-    "id": "dsh-mcp",
-    "name": "MCP 服务器配置",
-    "nameEn": "MCP Server Config",
-    "author": "hyzyn",
-    "description": "图形化 MCP 服务器配置中心：托管 ~/.dsh/cordis.patch.yml 的 MCP 区块，保存后经 HMR 热加载为 mcp__<server>__<tool> 工具、无需重启；支持 stdio 与 streamable-http 两种传输、js: 前缀的环境变量与请求头表达式、连接测试、启用停用与删除。",
-    "descriptionEn": "A graphical MCP server config center: manages the MCP block of ~/.dsh/cordis.patch.yml and hot-loads it via HMR into mcp__<server>__<tool> tools without a restart; supports stdio and streamable-http transports, js: expression prefixes for env vars and headers, connection tests, enable/disable and delete.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/mcp",
-    "npm": "@hyzyn/dsh-mcp",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
-    "id": "dsh-profile",
-    "name": "Profile 管理",
-    "nameEn": "Profile Manager",
-    "author": "hyzyn",
-    "description": "可视化管理 DSH profile：查看、创建、复制、重命名、删除与端口配置。每个 profile 是 $DSH_HOME/profiles 下的独立目录，拥有自己的 bundle 层与补丁文件，多环境互不干扰。",
-    "descriptionEn": "Visual DSH profile management: inspect, create, duplicate, rename, delete and configure ports. Each profile is a standalone directory under $DSH_HOME/profiles with its own bundle layers and patch files, so multiple environments never interfere.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/profile",
-    "npm": "@hyzyn/dsh-profile",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
-    "id": "dsh-prompt",
-    "name": "Prompt 管理",
-    "nameEn": "Prompt Manager",
-    "author": "hyzyn",
-    "description": "systemPrompt 可视化管理：编辑、版本管理、A/B 测试与导出分享。配置保存在 ~/.dsh/prompts.yml 的托管区块，启用后作为 systemPrompt section 注入；A/B 开启时按比例随机命中版本。",
-    "descriptionEn": "Visual systemPrompt management: editing, versioning, A/B testing and export/share. Config lives in the managed block of ~/.dsh/prompts.yml; the active prompt is injected as a systemPrompt section, and in A/B mode sessions are routed to a variant by weight.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/prompt",
-    "npm": "@hyzyn/dsh-prompt",
-    "category": "tools",
-    "subcategory": "model"
-  },
-  {
-    "id": "dsh-rss",
-    "name": "新闻聚合",
-    "nameEn": "RSS Digest",
-    "author": "hyzyn",
-    "description": "RSS / 新闻聚合：订阅多个 RSS 与 Atom 源，每天自动汇总成一篇「今日值得读」Markdown 并注入 systemPrompt 供模型直接引用；支持分类分组，订阅都在设置卡片里管理。",
-    "descriptionEn": "RSS and news digest: subscribe to multiple RSS and Atom feeds and get a daily \"today's worth reading\" Markdown digest injected into the systemPrompt for the model to cite directly, with category grouping and all feed management in a settings card.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/rss",
-    "npm": "@hyzyn/dsh-rss",
-    "category": "knowledge",
-    "subcategory": "reading"
-  },
-  {
-    "id": "dsh-search",
-    "name": "全局搜索",
-    "nameEn": "Global Search",
-    "author": "hyzyn",
-    "description": "侧边栏「全局搜索」入口（⌘/Ctrl+K 也可唤出命令面板）：全文搜索历史会话、Prompt、MCP 工具与设置面板，一键跳转到命中的会话或设置项。",
-    "descriptionEn": "A sidebar Global Search entry with a ⌘/Ctrl+K command palette: full-text search across past sessions, prompts, MCP tools and settings panels, jumping straight to the matching session or setting.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/search",
-    "npm": "@hyzyn/dsh-search",
-    "category": "ui",
-    "subcategory": "panel"
-  },
-  {
-    "id": "dsh-stalled-turn-continue",
-    "name": "推理后停滞续跑",
-    "nameEn": "Stalled Turn Continue",
-    "author": "4evercool",
-    "description": "当回合以 completed（或 no-visible-output）结束、且最后一条助手消息只有推理内容、既没有文本也没有工具调用时，等待 graceMs 后通过 agent 注册表发送一条续跑消息。与 dsh-client-auto-continue 分工：不处理 error / interrupted / max-tokens；由 cooldownMs 与 maxConsecutive 限制连续续跑次数，用户消息或有可见输出的回合会重置计数。",
-    "descriptionEn": "Resumes a turn that ends completed (or no-visible-output) when the last assistant message carried reasoning only, with no text and no tool call: after graceMs it sends one follow-up through the agent registry. Complements dsh-client-auto-continue and never touches error / interrupted / max-tokens; cooldownMs and maxConsecutive bound repeated resumes, and a user message or a turn with visible output resets the counter.",
-    "repo": "https://github.com/4evercool/dsh-stalled-turn-continue",
-    "npm": "dsh-stalled-turn-continue",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
-    "id": "dsh-thread-tools",
-    "name": "会话线程工具",
-    "nameEn": "Thread Tools",
-    "author": "wig123",
-    "description": "把 Codex 的线程工具搬到 DSH 上：让模型列出你开着的那些会话、按正文检索它们、给某个正在跑的会话递消息并读回它的回答，还能新建空会话或从已有会话的已完成轮次分叉。",
-    "descriptionEn": "Codex's thread tools on DSH: the model can list the sessions you have open, search their content, hand one of them a message and read the answer back, open a fresh session, or branch one from its completed turns.",
-    "repo": "https://github.com/wig123/dsh-thread-tools",
-    "category": "tools",
-    "subcategory": "dev"
   },
   {
     "id": "dsh-usage-panel",
@@ -904,17 +596,6 @@
     "repo": "https://github.com/liiydong/dsh-workbench",
     "category": "ui",
     "subcategory": "panel"
-  },
-  {
-    "id": "dsh-ppt-studio",
-    "name": "PPT 工作室",
-    "nameEn": "PPT Studio",
-    "author": "zbsph",
-    "description": "把做 PPT 变成带门禁的工程流程：四类任务工作流（从头 / 补完 / 修改 / 总结）+ 21 个 ppt_* 工具（建工程、渲染、数字审阅、视觉截图、导出、导入、只改一页）+ PPTD 中间层（deck.yaml + pages/*.yaml，1px = 1pt）+ 设计意图声明制（有意重叠逐对声明，内容互压永远拦下）+ 内置模板库与 Office 真渲染抽检；改既有 PPT 的某一页走 splice（其余页逐字节不变），单页交付走 slice，贴模板走 patch；另附四本内置技能手册（叙事版式 / 图表数据 / 中文文案 / 答疑）与「PPT 工作室」agent 预设。默认一条命令 `dsh plugin add <仓库 URL>` 装成 profile bundle——该 profile 的所有会话都能用这些工具与手册；若想让它们**只在选中「PPT 工作室」预设的会话里出现**，在解压后的发布包里跑 `node scripts/install.mjs --isolate` 即可切到会话级隔离（两条路互斥，各一句命令来回切，详见仓库 README §0.7）。",
-    "descriptionEn": "Turns deck making into a gated engineering workflow: a four-task pipeline (from scratch / augment / edit / summarize), 21 ppt_* tools (scaffold, render, numeric review, screenshots, export, import, single-page edit), the PPTD intermediate layer (deck.yaml + pages/*.yaml, 1px = 1pt), design-intent declarations (intentional overlaps are declared pair by pair, content collisions are always blocked), a built-in template library and Office real-render spot checks. Editing one page of an existing deck goes through splice (every other page stays byte-identical), single-page delivery through slice and template patching through patch, plus four bundled skill manuals (narrative and layout, charts and data, Chinese copy, Q&A) and a PPT Studio agent preset. Install with a single command (`dsh plugin add <repo URL>`) as a profile bundle, which makes the tools and manuals available to every session in that profile; to scope them to sessions that select the \"PPT Studio\" preset instead, run `node scripts/install.mjs --isolate` from the unpacked release (the two mount paths are mutually exclusive and switch with one command each; see README section 0.7).",
-    "repo": "https://github.com/zbsph/dsh-ppt-studio",
-    "category": "tools",
-    "subcategory": "dev"
   },
   {
     "id": "dsh-cert-mcp",
@@ -953,18 +634,6 @@
     "subcategory": "reading"
   },
   {
-    "id": "dsh-mcp-panel",
-    "name": "MCP 管理面板",
-    "nameEn": "MCP Panel",
-    "author": "PerryLink",
-    "description": "官方 DSH MCP 客户端的管理控制台：/mcp 命令提供健康诊断，设置页支持审批门禁的服务器增删改与自动备份，并在官方工具管线上提供试调台。",
-    "descriptionEn": "Management console for the official DSH MCP client: a /mcp command with health diagnostics, a Settings tab with approval-gated server CRUD and automatic backups, and a trial console over the official tool pipeline.",
-    "repo": "https://github.com/PerryLink/dsh-mcp-panel",
-    "npm": "dsh-mcp-panel",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
     "id": "dsh-plugin-doctor",
     "name": "插件体检",
     "nameEn": "Plugin Doctor",
@@ -1001,42 +670,6 @@
     "subcategory": "bridge"
   },
   {
-    "id": "dsh-autotier",
-    "name": "自动模型分层",
-    "nameEn": "Model Tier Routing",
-    "author": "PerryLink",
-    "description": "自动强弱模型分层路由：按意图在请求瀑布上落档，计划模式由强模型出计划、弱模型执行，高风险工具调用前有确定性守卫，失败后按 TTL 升级档位。",
-    "descriptionEn": "Automatic strong/cheap model-tier routing: intent-gated tier landing on the agent request waterfall, plan-mode handoff, high-risk guards on tool calls, and failure escalation with TTL fallback.",
-    "repo": "https://github.com/PerryLink/dsh-autotier",
-    "npm": "dsh-autotier",
-    "category": "tools",
-    "subcategory": "model"
-  },
-  {
-    "id": "dsh-background-agents",
-    "name": "后台代理",
-    "nameEn": "Background Agents",
-    "author": "PerryLink",
-    "description": "长会话后台代理：启动可续聊的子代理，在 Web UI 侧栏看进度、随时发消息、随时打断，全部走官方 subagent 接缝。",
-    "descriptionEn": "Interactive long-session background agents: start a durable continuable child agent, watch its progress in the Web UI sidebar, message it at any time and interrupt it.",
-    "repo": "https://github.com/PerryLink/dsh-background-agents",
-    "npm": "dsh-background-agents",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
-    "id": "dsh-budget",
-    "name": "成本治理",
-    "nameEn": "Budget and Cost",
-    "author": "PerryLink",
-    "description": "成本治理：按模型、会话与日期聚合 token 与费用，预算上限配合阈值提醒与超限策略，并给出碳排放估算与逐模型延迟基准。",
-    "descriptionEn": "Cost governance: token and cost metering per model, session and day, budget caps with threshold alerts and over-limit policies, carbon estimation and latency benchmarks.",
-    "repo": "https://github.com/PerryLink/dsh-budget",
-    "npm": "dsh-budget",
-    "category": "utility",
-    "subcategory": "stats"
-  },
-  {
     "id": "dsh-checkpoint-rewind",
     "name": "检查点回退",
     "nameEn": "Checkpoint and Rewind",
@@ -1047,18 +680,6 @@
     "npm": "dsh-checkpoint-rewind",
     "category": "tools",
     "subcategory": "context"
-  },
-  {
-    "id": "dsh-claude-move",
-    "name": "迁移向导",
-    "nameEn": "Migration Wizard",
-    "author": "PerryLink",
-    "description": "四源迁移向导：把 Claude Code、Codex、OpenCode、Hermes 的会话、记忆、技能、指令与斜杠命令搬进 DSH，可续跑、走审批、幂等。",
-    "descriptionEn": "Four-source migration wizard: move Claude Code, Codex, OpenCode and Hermes sessions, memories, skills, instructions and slash commands into DSH, resumable, approval-gated and idempotent.",
-    "repo": "https://github.com/PerryLink/dsh-claude-move",
-    "npm": "dsh-claude-move",
-    "category": "integration",
-    "subcategory": "external-ai"
   },
   {
     "id": "dsh-click",
@@ -1097,54 +718,6 @@
     "subcategory": "api"
   },
   {
-    "id": "dsh-defend",
-    "name": "注入防御",
-    "nameEn": "Prompt Defense",
-    "author": "PerryLink",
-    "description": "提示词注入、越狱与密钥外泄防御：Aho-Corasick 检测配合 allow/ask/block 拦截、脱敏审计事件，以及递归删除的执行前门禁。",
-    "descriptionEn": "Prompt-injection, jailbreak and secret-leak defense: Aho-Corasick detection with allow/ask/block interception, sanitized audit events and a recursive-delete pre-execution gate.",
-    "repo": "https://github.com/PerryLink/dsh-defend",
-    "npm": "dsh-defend",
-    "category": "security",
-    "subcategory": "policy"
-  },
-  {
-    "id": "dsh-doublecheck",
-    "name": "交付双检",
-    "nameEn": "Double Check",
-    "author": "PerryLink",
-    "description": "工程纪律包：先拷问需求、再测实现、最后证明交付，并以「可交付 / 需返工」的结论把住交接关口。",
-    "descriptionEn": "Engineering-discipline bundle: grill the requirements, test the implementation, prove the delivery, and gate the handoff with a deliverable or rework decision.",
-    "repo": "https://github.com/PerryLink/dsh-doublecheck",
-    "npm": "dsh-doublecheck",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
-    "id": "dsh-draw",
-    "name": "图像生成路由",
-    "nameEn": "Image Generation Router",
-    "author": "PerryLink",
-    "description": "统一静态图像生成：单一 image_generate 工具配标准参数，按配置路由到 OpenAI Images、智谱 CogView 及兼容端点，带健康感知回退与会话配额。",
-    "descriptionEn": "Unified static-image generation: one image_generate tool with standard parameters, config-driven engine routing (OpenAI Images, Zhipu CogView and compatible endpoints), health-aware fallback and per-session quota.",
-    "repo": "https://github.com/PerryLink/dsh-draw",
-    "npm": "dsh-draw",
-    "category": "tools",
-    "subcategory": "model"
-  },
-  {
-    "id": "dsh-fast",
-    "name": "性能诊断",
-    "nameEn": "Performance Diagnostics",
-    "author": "PerryLink",
-    "description": "只读性能诊断：会话加载与恢复耗时、落盘命中、压缩次数与触发原因、上下文注入量与 LLM 缓存命中率，通过 /fast 呈现。",
-    "descriptionEn": "Read-only performance diagnostics: session load and restore timing, spill hits, compaction count and trigger, context-injection volume and LLM cache hit rate, surfaced through /fast.",
-    "repo": "https://github.com/PerryLink/dsh-fast",
-    "npm": "dsh-fast",
-    "category": "utility",
-    "subcategory": "stats"
-  },
-  {
     "id": "dsh-fund-research",
     "name": "基金研究",
     "nameEn": "Fund Research",
@@ -1169,18 +742,6 @@
     "subcategory": "qa"
   },
   {
-    "id": "dsh-local-ai",
-    "name": "本地模型",
-    "nameEn": "Local Models",
-    "author": "PerryLink",
-    "description": "Ollama 本地模型接入：发现、拉取、删除与检视本地模型，按任务类型或关键词路由并可自动回退云端，/ollama 一键看状态。",
-    "descriptionEn": "Local-model integration for Ollama: discover, pull, remove and inspect local models, route requests by task type or keyword with automatic cloud fallback, and check status via /ollama.",
-    "repo": "https://github.com/PerryLink/dsh-local-ai",
-    "npm": "dsh-local-ai",
-    "category": "tools",
-    "subcategory": "model"
-  },
-  {
     "id": "dsh-lsp-actions",
     "name": "LSP 动作",
     "nameEn": "LSP Actions",
@@ -1191,30 +752,6 @@
     "npm": "dsh-lsp-actions",
     "category": "tools",
     "subcategory": "dev"
-  },
-  {
-    "id": "dsh-mask",
-    "name": "隐私脱敏",
-    "nameEn": "PII Masking",
-    "author": "PerryLink",
-    "description": "隐私脱敏中间件：姓名、电话、邮箱、身份证与银行卡、密钥、地址在送达模型前替换为占位符，展示层再还原，明文永不落日志。",
-    "descriptionEn": "PII masking middleware: anonymize names, phones, emails, ID and bank cards, keys and addresses to placeholders before they reach the model, restore them at the display layer and never log plaintext.",
-    "repo": "https://github.com/PerryLink/dsh-mask",
-    "npm": "dsh-mask",
-    "category": "security",
-    "subcategory": "policy"
-  },
-  {
-    "id": "dsh-memento",
-    "name": "跨会话记忆",
-    "nameEn": "Cross-session Memory",
-    "author": "PerryLink",
-    "description": "有界、分层、走审批、可审计的跨会话记忆：ctx.memory 能力接缝配本地 SQLite provider、memory 工具与冻结快照注入。",
-    "descriptionEn": "Bounded, layered, approval-gated and auditable cross-session memory: a ctx.memory capability seam with a local SQLite provider, a memory tool and frozen snapshot injection.",
-    "repo": "https://github.com/PerryLink/dsh-memento",
-    "npm": "dsh-memento",
-    "category": "knowledge",
-    "subcategory": "memory"
   },
   {
     "id": "dsh-observe",
@@ -1265,30 +802,6 @@
     "subcategory": "dev"
   },
   {
-    "id": "dsh-reach",
-    "name": "多渠道决策桥",
-    "nameEn": "Multi-channel Bridge",
-    "author": "PerryLink",
-    "description": "多渠道决策与远控桥：任意工作区的审批与提问卡片推送到 IM（微信 iLink 优先）并从聊天中回答，附会话控制台与失败即拒的发送者归属校验。",
-    "descriptionEn": "Multi-channel decision and remote-control bridge: approval and question cards from any workspace mirrored to IM chat and answered from chat, with a session console and fail-closed sender ownership.",
-    "repo": "https://github.com/PerryLink/dsh-reach",
-    "npm": "dsh-reach",
-    "category": "integration",
-    "subcategory": "bridge"
-  },
-  {
-    "id": "dsh-research-report",
-    "name": "研究报告引擎",
-    "nameEn": "Research Report Engine",
-    "author": "PerryLink",
-    "description": "可验证的研究报告引擎：内容寻址的证据台账把结论绑定到快照，配版本化封存报告与逐条结论的核验裁定。",
-    "descriptionEn": "Verifiable research-report engine: a content-addressed evidence ledger that binds claims to snapshots, plus versioned sealed reports with per-claim verification verdicts.",
-    "repo": "https://github.com/PerryLink/dsh-research-report",
-    "npm": "dsh-research-report",
-    "category": "knowledge",
-    "subcategory": "qa"
-  },
-  {
     "id": "dsh-score",
     "name": "插件评分",
     "nameEn": "Plugin Scoring",
@@ -1301,42 +814,6 @@
     "subcategory": "dev"
   },
   {
-    "id": "dsh-session-pin",
-    "name": "会话置顶",
-    "nameEn": "Session Pin",
-    "author": "PerryLink",
-    "description": "把会话与工作区置顶到侧栏，并支持逐条钉选配色，是 host 与 client 双面插件。",
-    "descriptionEn": "Pin sessions and workspaces to the top of the sidebar with per-pin row colors, as a dual-face host and client plugin.",
-    "repo": "https://github.com/PerryLink/dsh-session-pin",
-    "npm": "dsh-session-pin",
-    "category": "ui",
-    "subcategory": "panel"
-  },
-  {
-    "id": "dsh-session-sync",
-    "name": "会话同步",
-    "nameEn": "Session Sync",
-    "author": "PerryLink",
-    "description": "基于专用 git 镜像的跨设备会话同步：只追加、冲突即保留双方，附 /sync 命令与一组同步工具。",
-    "descriptionEn": "Cross-device session sync over a dedicated git mirror, with append-only keep-both conflict resolution, a /sync command and sync tools.",
-    "repo": "https://github.com/PerryLink/dsh-session-sync",
-    "npm": "dsh-session-sync",
-    "category": "integration",
-    "subcategory": "sync"
-  },
-  {
-    "id": "dsh-skill-pack-security",
-    "name": "安全技能包",
-    "nameEn": "Security Skill Pack",
-    "author": "PerryLink",
-    "description": "安全审计技能包加供应链门禁：八个中英双语技能（密钥扫描、依赖审计、供应链评审、提示注入评审等）与安装前扫描器 plugin_vet。",
-    "descriptionEn": "Security-audit skill pack plus a supply-chain gate: eight bilingual skills (secret scan, dependency audit, supply-chain review, prompt-injection review and more) and the plugin_vet pre-install scanner.",
-    "repo": "https://github.com/PerryLink/dsh-skill-pack-security",
-    "npm": "@perrylink/dsh-skill-pack-security-provider",
-    "category": "security",
-    "subcategory": "access"
-  },
-  {
     "id": "dsh-talk",
     "name": "语音交互",
     "nameEn": "Voice Session",
@@ -1347,18 +824,6 @@
     "npm": "dsh-talk",
     "category": "ui",
     "subcategory": "chat"
-  },
-  {
-    "id": "dsh-team-rooms",
-    "name": "团队房间",
-    "nameEn": "Team Rooms",
-    "author": "PerryLink",
-    "description": "跨独立会话的持久共享房间：消息总线、共享任务板与时间线，从 dsh-background-agents 拆分而来。",
-    "descriptionEn": "Persistent shared rooms across independent sessions: a message bus, a shared task board and a timeline, extracted from dsh-background-agents.",
-    "repo": "https://github.com/PerryLink/dsh-team-rooms",
-    "npm": "dsh-team-rooms",
-    "category": "integration",
-    "subcategory": "bridge"
   },
   {
     "id": "dsh-test-drive",
@@ -1394,29 +859,6 @@
     "repo": "https://github.com/activeing123/dsh-mcptoon",
     "category": "tools",
     "subcategory": "dev"
-  },
-  {
-    "id": "dsh-claude-style",
-    "name": "Claude Code 桌面主题",
-    "nameEn": "Claude Code Desktop Theme",
-    "author": "Nwflower",
-    "description": "为 DSH Web GUI 复刻 Claude Code Desktop 的视觉与交互：象牙白/暖黑双画布与陶烬橙强调色、衬线/无衬线/等宽三字体分工、权限分段控件、品牌切换与模型选择器文案，纯 CSS 覆盖加客户端 DOM override 实现。",
-    "descriptionEn": "Recreates the Claude Code Desktop look and interaction model for the DSH Web GUI: ivory/warm-black dual canvas with a single clay accent, serif/sans/mono three-font system, permission segmented control, brand switcher and model-picker copy — pure CSS overrides plus client-side DOM overrides.",
-    "repo": "https://github.com/Nwflower/dsh-claude-style",
-    "npm": "dsh-claude-style",
-    "category": "ui",
-    "subcategory": "render"
-  },
-  {
-    "id": "dsh-session-suspend",
-    "name": "会话挂起提醒",
-    "nameEn": "Session Suspend Reminder",
-    "author": "Archaofan",
-    "description": "在对话里用一句自然语言挂起当前会话：侧边栏对应行按样式预设高亮，悬停弹出提醒卡片；折叠的工作区显示其中的挂起数量，挂起总览按预设样式区分。",
-    "descriptionEn": "Park the current session with one natural-language note: the matching sidebar row is highlighted by style preset with a hover reminder card, a folded workspace shows how many of its sessions are parked, and the parked overview is differentiated by preset.",
-    "repo": "https://github.com/Archaofan/dsh-sidebar-reminder",
-    "category": "ui",
-    "subcategory": "panel"
   },
   {
     "id": "dsh-ltm",
@@ -1455,28 +897,6 @@
     "subcategory": "bridge"
   },
   {
-    "id": "agent-body",
-    "name": "Agent-Body 器官化插件层",
-    "nameEn": "Agent-Body",
-    "author": "1420079678-ctrl",
-    "description": "把 DSH 插件组织成一具身体：插件声明自己是器官（能力 / 感知 / 反射弧），内核补上其余生理机能——按内环境变速的心脏泵血、神经冲动路由、零模型调用的反射弧、静默 2 分钟浅睡 5 分钟深睡的确定性记忆巩固，以及先归因再处置、器官下次成功才闭合伤口的自愈闭环；另含零驻留上下文引擎，把体积大的工具输出驱逐出活动上下文、只留指针，需要时按原样取回。一条命令装齐三个核心器官，其余器官可单独安装。",
-    "descriptionEn": "Organises DSH plugins into a body: the plugins declare themselves organs (capabilities, senses, reflex arcs) and the kernel supplies the rest of the physiology — a heartbeat that changes rate with the internal environment, nerve-impulse routing, reflex arcs that fire with zero model calls, deterministic memory consolidation after 2 minutes of light and 5 minutes of deep sleep, and a self-healing loop that attributes a failure before acting and only closes a wound once the organ succeeds again. It also carries a zero-residence context engine that evicts oversized tool payloads from the live context, keeps pointers, and rebuilds any payload verbatim on demand. One command installs the three core organs; the others install individually.",
-    "repo": "https://github.com/1420079678-ctrl/agent-body",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
-    "id": "dsh-model-priority",
-    "name": "模型顺序",
-    "nameEn": "Model Priority",
-    "author": "mengge237",
-    "description": "自定义模型 / 提供方的排列顺序：在「设置 → 模型」里你自己配置的提供方卡片内拖拽调整（宿主内置的 DeepSeek 卡片里这块是只读清单），宿主的模型列表按这份顺序返回（稳定排序，只重排，不增删条目、不改字段）。顺序写回当前生效的配置真源，写前自动备份，并校验条目集合未增删、总行数不变、块外逐行一致、重读顺序达标 —— 任一道不过就整次拒绝，一个字节都不写。0.1.5 线写 settings.yaml，0.1.7 线起写 profile 用户层的 cordis.patch.yml，两代形状都认。",
-    "descriptionEn": "Custom provider and model ordering: drag to reorder inside the provider cards you configured yourself on the Models settings page (the built-in DeepSeek card renders as a read-only list), and the host model list follows that order (stable sort - reordering only, never adding, dropping or rewriting entries). The order is written back to whichever config source is live, with an automatic backup plus checks that the id set is unchanged, the line count is unchanged, every line outside the block is byte-identical and the order reads back correct; if any check fails the whole write is refused and nothing is touched. Writes settings.yaml on the 0.1.5 line and the profile user layer cordis.patch.yml from 0.1.7 on - both shapes are parsed.",
-    "repo": "https://github.com/mengge237/dsh-model-priority",
-    "category": "tools",
-    "subcategory": "model"
-  },
-  {
     "id": "dsh-550c-boot",
     "name": "550C 开机动画",
     "nameEn": "550C Boot Splash",
@@ -1499,18 +919,6 @@
     "npm": "dsh-widgets",
     "category": "ui",
     "subcategory": "panel"
-  },
-  {
-    "id": "dsh-novel-writer",
-    "name": "网文写作工作台",
-    "nameEn": "Novel Writing Workbench",
-    "author": "siweina",
-    "description": "给中文网文作者的本地写作工作台：动笔前一次调用取齐上一章承接口、本章大纲、人物卡、待回收伏笔与用语规范；写完按六维文笔基线与原著波动带量化自检，诊断结果排成带原句行号的改稿待办；跨章可查伏笔埋设跨度、人物连续缺席与大纲偏离。句式、情感与语义全部用随包分发的 24MB 中文模型在本机推理，零 API 花费、正文不出本机；18 个工具，同一套能力也可作为 MCP 服务器给 Claude Desktop / Cursor 使用。",
-    "descriptionEn": "A local workbench for Chinese web-novel writers: one call before drafting gathers the previous chapter's hand-off, the current outline, related character cards, unresolved plot threads and the world's language rules; after drafting, a six-dimension prose baseline derived from the source drives a quantified self-check that becomes a prioritised revision plan with original line numbers; across chapters it reports plot-thread spans, characters missing for too long and outline drift. Sentence, emotion and semantic analysis all run on a bundled 24MB Chinese model on-device — zero API cost, the manuscript never leaves the machine; 18 tools, and the same capabilities ship as an MCP server for Claude Desktop / Cursor.",
-    "repo": "https://github.com/siweina/dsh-novel-writer",
-    "npm": "dsh-novel-writer",
-    "category": "knowledge",
-    "subcategory": "reading"
   },
   {
     "id": "dsh-screen-capture-record-desktop",
@@ -1698,18 +1106,6 @@
     "subcategory": "chat"
   },
   {
-    "id": "dsh-loglens",
-    "name": "日志查询",
-    "nameEn": "Log Query",
-    "author": "hyzyn",
-    "description": "Elasticsearch / OpenSearch 的日志查询卡片：一个查询面——按来源方言给查询串与可点例子、字段名补全、筛选芯片、可点柱缩放时间窗的时间分布、把分组的桶点成筛选、带级别染色与堆栈续行标记的结果列表（可选列、可翻页）；Docker 容器日志作为采集来源复用 docker 插件。agent 侧五个只读 loglens_* 工具（sources / search / fields / facets / context）与面板共用同一执行层。出站只打到已配置的来源，按解析后的 IP 判定，不跟随重定向，并有体积与超时上限。",
-    "descriptionEn": "A log query card over Elasticsearch / OpenSearch: one query surface with per-dialect query strings and clickable examples, field-name completion, filter chips, a time histogram whose bars zoom into that window, field facets that turn a bucket into a filter, and a result list with level colors, stack-continuation rows, columns and paging; Docker container logs are a collection source that reuses the docker plugin. Ships five read-only loglens_* tools (sources / search / fields / facets / context) sharing the same execution layer as the panel. Outbound requests only reach configured sources, judged on the resolved IP, without following redirects and with size and timeout caps.",
-    "repo": "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/loglens",
-    "npm": "@hyzyn/dsh-loglens",
-    "category": "tools",
-    "subcategory": "dev"
-  },
-  {
     "id": "client-resume-button",
     "name": "断点续跑按钮",
     "nameEn": "Resume Button",
@@ -1743,18 +1139,6 @@
     "npm": "dsh-connect-minimaxcode",
     "category": "integration",
     "subcategory": "external-ai"
-  },
-  {
-    "id": "dsh-model-everything",
-    "name": "架构设计与代码的建模审查",
-    "nameEn": "Architecture Design & Code Modeling Review",
-    "author": "AmethystLuna",
-    "description": "面向架构设计的建模审查：Mermaid / PlantUML 源码直接画成架构图——分层布局、父子分组、结构预算、两版设计的包含关系比对、右栏白板；UML 图的读取与审查；状态机与协议的可执行判定；数据模型与迁移检查；有限词自动机判语言等价与包含并给出最短反例；并发声称挖掘后分派给能判定它的工具；依赖图审查；报告对比。同作者的 dsh-logicprobe 已被本插件取代：新工作从这里开始，旧插件只为既有安装保留。版本以 npm 字段为准，尚无社区使用数据。",
-    "descriptionEn": "Modeling review for architecture work: a Mermaid or PlantUML source drawn as an architecture diagram - layered layout, nested packages, structure budgets, a containment diff between two designs, and a sidebar whiteboard; UML diagrams read and reviewed; state machines and protocols decided as models; data models and migrations checked for coverage and rollback symmetry; finite-word automata deciding language equivalence and inclusion with the shortest witness; concurrency claims mined and routed to the checker that can decide them; dependency graphs audited; reports diffed. It supersedes the same author's dsh-logicprobe: start new work here, and the older plugin stays only for existing installs. The npm field carries the version; no community usage data yet.",
-    "repo": "https://github.com/AmethystLuna/dsh-model-everything",
-    "npm": "dsh-model-everything",
-    "category": "tools",
-    "subcategory": "dev"
   },
   {
     "id": "dsh-composer-ease",
