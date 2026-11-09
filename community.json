@@ -1272,4 +1272,17 @@
     "category": "utility",
     "subcategory": "notify"
   }
+,
+  {
+    "id": "dsh-logo-golden",
+    "name": "dsh-logo-golden",
+    "nameEn": "dsh-logo-golden",
+    "author": "devzer0o0",
+    "description": "HDR 黄金 SSR 大肥鱼：把侧栏的鲸鱼、deepseek 字标与 HARNESS 铭牌重绘为抛光黄金材质，并有一道斜向金属光带每三秒完整掠过整个组合。光带按原始矢量生成的几何遮罩判定受光面，暗金笔画与铭牌底板都会反光，铭文与镂空保持不亮；画布走 rgba16float 扩展动态范围，光芯短时峰值瞄准 1600 nit。",
+    "descriptionEn": "HDR gold SSR whale lockup: redraws the sidebar whale, deepseek wordmark and HARNESS plate in polished gold, with a diagonal metal sweep that crosses the whole lockup every three seconds. A geometric mask built from the original vectors decides what is lit, so the dark end of the gold ramp and the plate reflect while the lettering and counters stay dark; the canvas runs rgba16float extended range with a 1600 nit short-time peak at the core.",
+    "repo": "https://github.com/devzer0o0/dsh-logo-golden",
+    "npm": "dsh-logo-golden",
+    "category": "ui",
+    "subcategory": "render"
+  }
 ]
