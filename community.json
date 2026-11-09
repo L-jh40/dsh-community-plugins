@@ -1259,5 +1259,17 @@
     "npm": "dsh-archived-chats",
     "category": "utility",
     "subcategory": "cleanup"
+  },
+  {
+    "id": "dsh-thanks-carl",
+    "name": "谢谢卡尔",
+    "nameEn": "Thanks, Carl",
+    "author": "gongfpp",
+    "description": "DSH Web 的任务完成彩蛋、可选常驻桌宠与本地喝水、吃饭、休息提醒。正常完成后按概率显示卡尔图片，失败、取消和中断不庆祝；默认概率 15%、冷却 30 分钟。不调用模型或系统通知，只在打开的页面工作，错过的提醒不补放。需要 HTTPS 或 localhost 及 Web Locks；代码 MIT，随包照片仅限随插件个人非商用。",
+    "descriptionEn": "Task-completion easter eggs, an optional resident pet, and local water, meal and break reminders for DSH Web. Shows Carl probabilistically after normal completion, never celebrating failures, cancellations or interruptions; defaults to 15% chance and a 30-minute cooldown. No model calls or system notifications; runs only in an open page, without replaying missed reminders. Requires HTTPS or localhost and Web Locks. Code is MIT; bundled photos are for personal, non-commercial use with this plugin only.",
+    "repo": "https://github.com/gongfpp/dsh-thanks-carl",
+    "npm": "dsh-thanks-carl",
+    "category": "utility",
+    "subcategory": "notify"
   }
 ]
