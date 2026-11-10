@@ -1331,5 +1331,16 @@
     "npm": "dsh-memory-engine",
     "category": "knowledge",
     "subcategory": "memory"
+  },
+  {
+    "id": "dsh-agent-web-search",
+    "name": "Agent Web Search",
+    "nameEn": "Agent Web Search",
+    "author": "JerryLiu369",
+    "description": "把 DeepSeek Harness 的 web_search 换成多上游聚合检索：内置 16 个上游，默认只启用 DDGS、Exa、Parallel 三个免 Key 上游，Brave、Tavily 以及 Gemini、Grok 等模型原生检索上游在设置页配好凭据后再开启；支持 fanout / fallback 两种执行模式，结果仍以 DSH 引用卡片展示。前置：插件本体只做桥接，实际检索由本机 Python 包 agent-web-search-mcp（Python 3.10+）完成，需先在 DSH 宿主所在环境执行 python -m pip install agent-web-search-mcp（不在 PATH 上时用 AGENT_WEB_SEARCH_MCP_COMMAND 指定），未安装时 web_search 不可用。安装即接管搜索：bundle patch 把 searchProvider 固定为本插件，禁用内置 DeepSeek 搜索行，关闭 tool-web 自带的 web_search（保留 web_fetch），改由插件注册同名工具，并在每个 agent scope 以 force: true 覆盖内置版本。与其它同样钉 searchProvider 的搜索插件互斥，最后应用的一层生效。",
+    "descriptionEn": "Replaces DeepSeek Harness web_search with aggregated multi-upstream search: 16 upstreams, of which only the three keyless ones (DDGS, Exa, Parallel) are enabled by default; Brave, Tavily and model-native grounding upstreams such as Gemini and Grok can be turned on in Settings once their credentials are set. Fanout and fallback modes are supported, and results still render as DSH citation cards. Prerequisite: the plugin is only a bridge, and searches run in the local Python package agent-web-search-mcp (Python 3.10+). Install it in the same environment as the DSH host with python -m pip install agent-web-search-mcp (or point AGENT_WEB_SEARCH_MCP_COMMAND at it); without it, web_search does not work. Installing takes over search: the bundle patch pins searchProvider to this plugin, disables the built-in DeepSeek search row, turns off tool-web's own web_search (web_fetch stays), registers a web_search of its own, and shadows the built-in one in every agent scope with force: true. It is mutually exclusive with other plugins that pin searchProvider; the last applied layer wins.",
+    "repo": "https://github.com/JerryLiu369/agent-web-search",
+    "category": "tools",
+    "subcategory": "api"
   }
 ]
