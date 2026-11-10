@@ -1389,5 +1389,17 @@
     "repo": "https://github.com/Alphazerolan/diy-journal-settings",
     "category": "ui",
     "subcategory": "render"
+  },
+  {
+    "id": "dsh-oh-my-claude",
+    "name": "Oh My Claude",
+    "nameEn": "Oh My Claude",
+    "author": "lcestou",
+    "description": "把已登录的 Claude Code CLI 作为 dsh 的对话模型提供方：每次请求都通过 stream-json 驱动 claude -p，用的是 CLI 自己的登录，无需 API key、无额外服务、无运行时依赖。模型选择器实时列出你的账号可用的 Claude 模型；会话逐个续跑，并能跨 dsh 重启；Claude 的权限请求转为 dsh 审批；dsh 的工具通过 MCP 提供给 Claude；支持图片输入；套餐用量与 CLI 的上下文占用显示在 dsh 的上下文环里；composer 旁的一个按钮打开记忆、指令、技能、回退、改动、MCP、诊断、任务与调校面板；保存一台 SSH 机器后，dsh 的添加工作区对话框可选该机器上的目录，会话里的 Claude 就在远端运行。界面中英双语。需要本机已登录的 Claude Code CLI；支持 dsh 0.2.2-alpha.2 至 0.2.2-rc.1（0.2.0、0.2.1 走 npm 的 dsh-0.2.1 标签，0.1.x 走 dsh-0.1.x 标签）。",
+    "descriptionEn": "Your logged-in Claude Code CLI as a dsh conversation provider: every request drives claude -p over stream-json, so it uses the CLI's own login with no API key, no extra service and no runtime dependency. The model picker lists the Claude models your account can use; sessions resume one by one and survive a dsh restart; Claude's permission prompts become dsh approvals; dsh's tools reach Claude over MCP; images go in; plan usage and the CLI's own context breakdown show in dsh's context ring; one button beside the composer opens the Memory, Instructions, Skills, Rewind, Changes, MCP, Diagnostics, Tasks and Tune panel; once an SSH box is saved, dsh's Add workspace dialog can pick a folder on it and the session's Claude runs there. English and Chinese UI. Needs a logged-in Claude Code CLI on the box; runs on dsh 0.2.2-alpha.2 through 0.2.2-rc.1 (0.2.0 and 0.2.1 via the npm dsh-0.2.1 tag, 0.1.x lines via the dsh-0.1.x tags).",
+    "repo": "https://github.com/lcestou/dsh-oh-my-claude",
+    "npm": "dsh-oh-my-claude",
+    "category": "integration",
+    "subcategory": "external-ai"
   }
 ]
