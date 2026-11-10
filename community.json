@@ -1307,5 +1307,17 @@
     "repo": "https://github.com/NYSM803/dsh-restart-button",
     "category": "ui",
     "subcategory": "panel"
+  },
+  {
+    "id": "dsh-novel-fish",
+    "name": "小说摸鱼",
+    "nameEn": "Novel Fish",
+    "author": "gongfpp",
+    "description": "面向 DSH Web 0.2.x，兼容区间 >=0.2.1-rc.2 <0.3.0-0（真实页面验收在 0.2.2-alpha.2；0.2.2-rc.1 由只读宿主契约探针跑过 7 项检查）。主动展开选中的原生聊天区域时，在真实内容下方追加本地 EPUB、TXT、Markdown 小说片段；按书保存进度，不将小说发送给模型。无独立阅读页，EPUB 只显示文字。",
+    "descriptionEn": "For DSH Web 0.2.x within the range >=0.2.1-rc.2 <0.3.0-0 (real page acceptance ran on 0.2.2-alpha.2; 0.2.2-rc.1 passed the read-only host contract probe with 7 checks). Explicitly expanding selected native chat regions appends local EPUB, TXT and Markdown novel passages below real content. Per-book progress; no novel text sent to the model, no standalone reader, text-only EPUB.",
+    "repo": "https://github.com/gongfpp/dsh-novel-fish",
+    "npm": "@gongfpp/dsh-novel-fish",
+    "category": "ui",
+    "subcategory": "render"
   }
 ]
