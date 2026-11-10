@@ -17,7 +17,8 @@ pnpm community:check   # scripts/community-index.cjs --check
 
 ## Rules
 
-- `community.json` is append-only; one entry per commit. Required fields are
+- `community.json` keeps its entries in ascending `id` order, one entry per
+  commit: insert at the id position, never at the tail. Required fields are
   `id`, `name`, `nameEn`, `author`, `repo`; `npm`, `category`,
   `subcategory`, and the descriptions are optional per the validator, but the
   published copy is user-visible and is reviewed as such.

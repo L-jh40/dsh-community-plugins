@@ -7,10 +7,11 @@ the family bundle.
 
 ## Adding or updating a plugin entry
 
-1. Append one object to the end of the `community.json` array. There is no
-   `rank` field: the array order is the store order, and a registration only
-   ever lands at the tail so concurrent pull requests never reorder the entries
-   already there.
+1. Insert one object into the `community.json` array at its ascending `id`
+   position. There is no `rank` field: the array order is the store order, and
+   because every entry sits where its id sorts, two concurrent registrations
+   touch different parts of the file and merge without a conflict — a tail
+   append would collide with every other open registration.
 2. Fill the required fields: `id`, `name`, `nameEn`, `author`, `repo`.
    `description`, `descriptionEn`, `category`, `subcategory` and `npm` are
    optional to the validator, but the descriptions are store copy shown to every
@@ -30,10 +31,11 @@ without whitespace or shell metacharacters (the market turns it into a shell
 command) and `npm` must be a valid npm package name. `pnpm test` covers the
 same validation through the module API.
 
-Keep the diff at the tail. The file is UTF-8 with LF line endings and one object
-per entry: a pull request that rewrites the line endings or reformats existing
-entries turns a one-entry addition into a whole-file diff that can be neither
-reviewed nor merged alongside another registration.
+Keep the diff to the one entry. The file is UTF-8 with LF line endings, one
+object per entry, in ascending `id` order: a pull request that rewrites the line
+endings or reformats existing entries turns a one-entry addition into a
+whole-file diff that can be neither reviewed nor merged alongside another
+registration.
 
 An entry that states a compatibility range must match the plugin's current
 `engines.dsh`. Prefer an open range such as `>=0.2.1-rc.2 <0.4.0-0` over an
