@@ -1284,5 +1284,17 @@
     "npm": "dsh-logo-golden",
     "category": "ui",
     "subcategory": "render"
+  },
+  {
+    "id": "dsh-cost-voice",
+    "name": "大白饭到账语音播报",
+    "nameEn": "Dabaifan Turn-Cost Voice",
+    "author": "gongfpp",
+    "description": "在 DSH Web 回合结束后用随包本地音频播报人民币估算费用，默认大白饭音色，可切换支付宝，也可优先读取 dsh-cost-meter 的每轮费用或按用量和单价估算。提供音量、静音时段和最低播报金额设置；不调用 TTS 服务，金额不代替真实账单。需先在设置页试听以解锁浏览器音频，页面关闭不播报，后台可能延迟。代码 MIT；随包的支付宝音效片段来自未附许可证的 Reathin/XVoice，大白饭音色为 MiMo 克隆的二次创作，图标为网友二创，这些素材不随本插件以 MIT 授权再分发，仅限随插件个人非商业使用。",
+    "descriptionEn": "Announces estimated turn costs in CNY in DSH Web using bundled local audio, defaulting to the Dabaifan voice with an optional Alipay voice; can prefer per-turn costs from dsh-cost-meter or estimate from usage and model prices. Provides volume, quiet hours and a minimum amount. No TTS service; estimates are not billing records. Preview once in settings to unlock browser audio; requires an open page and may be delayed in background tabs. Code is MIT; the bundled Alipay clips come from Reathin/XVoice (which ships no licence), the Dabaifan voice is a second-hand creation cloned from MiMo and the icon is fan art, so these assets are not redistributed under the plugin's MIT grant and are for personal, non-commercial use with this plugin only.",
+    "repo": "https://github.com/gongfpp/dsh-cost-voice",
+    "npm": "dsh-cost-voice",
+    "category": "utility",
+    "subcategory": "notify"
   }
 ]
