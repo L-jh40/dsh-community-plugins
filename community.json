@@ -1378,5 +1378,16 @@
     "npm": "@nethiel/dsh-llm-keypool",
     "category": "tools",
     "subcategory": "model"
+  },
+  {
+    "id": "diy-journal",
+    "name": "DIY 手账本一体化插件",
+    "nameEn": "DIY Journal Skin and Editor",
+    "author": "Alphazerolan",
+    "description": "手账皮肤与本地样式菜单一体化：按区域选择图片、GIF 或 MP4，调整布局、胶带、白边与题字；支持可关闭的翻书开场。仅适配 DIY 手账本，需皮肤中心，菜单需 Python 3.9+，已在 Windows 验证。",
+    "descriptionEn": "A journal skin with a local editor for regional images, GIFs and MP4 videos, layouts, tape, borders and captions, plus an optional page-turning intro. Only for DIY Journal. Requires Skin Center and Python 3.9+ for the editor. Tested on Windows.",
+    "repo": "https://github.com/Alphazerolan/diy-journal-settings",
+    "category": "ui",
+    "subcategory": "render"
   }
 ]
