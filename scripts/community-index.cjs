@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 /**
- * Validate the community plugin index: the only source is
- * packages/dsh-community-plugins/community.json. market-build turns that
- * file into manifest/plugins.json for the Workshop store card and the
- * dsh-market.com site; every entry points at the contributor's own
- * repository — this repository never vendors their code.
+ * Validate the community plugin index: the only source is community.json in
+ * this repository. market-build turns that file into manifest/plugins.json for
+ * the Workshop store card and the dsh-market.com site; every entry points at
+ * the contributor's own repository — this repository never vendors their code.
+ *
+ * Entries are stored in ascending `id` order, and the array order is the store
+ * order. Keeping the entries sorted is what makes a registration a single-point
+ * insert instead of a tail append: two concurrent pull requests then touch
+ * different parts of the file and merge without a conflict.
  *
  * Usage:
  *   node scripts/community-index            # validate
@@ -41,6 +45,25 @@ const SUBCATEGORIES = {
   integration: ['remote', 'bridge', 'sync', 'external-ai'],
   security: ['access', 'policy'],
   utility: ['cleanup', 'stats', 'notify', 'net'],
+}
+
+/**
+ * Entries must ascend by `id`. The array order is the store order, so this is
+ * a data contract rather than cosmetics: it is what keeps a registration a
+ * one-point insert that merges beside every other open registration.
+ * @param raw - the parsed array, whose members are already known to be objects.
+ * @throws when two neighbours are out of order.
+ */
+function assertSortedById(raw) {
+  for (let i = 1; i < raw.length; i++) {
+    const previous = raw[i - 1].id
+    const current = raw[i].id
+    if (typeof previous === 'string' && typeof current === 'string' && previous > current) {
+      throw new Error(
+        'community.json: entries must be sorted by id: ' + previous + ' comes before ' + current,
+      )
+    }
+  }
 }
 
 /**
@@ -90,6 +113,7 @@ function validateEntries(raw) {
       }
     }
   }
+  assertSortedById(raw)
 }
 
 function main() {

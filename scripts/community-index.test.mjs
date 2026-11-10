@@ -53,6 +53,14 @@ test('validateEntries rejects duplicate ids', () => {
   assert.throws(() => validateEntries(dup), /duplicate entry id dsh-a/)
 })
 
+test('validateEntries requires entries in ascending id order', () => {
+  const reversed = structuredClone(VALID).reverse()
+  assert.throws(
+    () => validateEntries(reversed),
+    /entries must be sorted by id: dsh-b comes before dsh-a/,
+  )
+})
+
 test('validateEntries requires an https repository URL', () => {
   const bad = structuredClone(VALID)
   bad[0].repo = 'github.com/author-a/dsh-a'
