@@ -1319,5 +1319,17 @@
     "npm": "@gongfpp/dsh-novel-fish",
     "category": "ui",
     "subcategory": "render"
+  },
+  {
+    "id": "dsh-memory-engine",
+    "name": "记忆引擎",
+    "nameEn": "Memory Engine",
+    "author": "jiudouliang",
+    "description": "本地记忆插件 dsh-memory-engine：聊天时自动记下值得记的事，按遗忘曲线变淡，共享关键词自动连线，图谱可旋转、可点选、可搜索；支持编辑、删除、导出。默认开启会话导入（每 60 分钟最多 200 条，只取用户消息，自动过滤工作指令与重复内容），自动记忆默认关闭。数据只写本机 ~/.dsh/memory-engine 的 JSON 文件，明文、不上传。",
+    "descriptionEn": "dsh-memory-engine is a local memory plugin: it captures facts worth remembering from chat, fades them along a forgetting curve, links them by shared keywords, and renders a rotatable, clickable graph with search, edit, delete and export. Session import is on by default (up to 200 user messages every 60 minutes, with work-instruction and duplicate filtering); automatic memory capture is off by default. Data stays on this machine as plain JSON under ~/.dsh/memory-engine and is never uploaded.",
+    "repo": "https://github.com/jiudouliang/dsh-memory-engine",
+    "npm": "dsh-memory-engine",
+    "category": "knowledge",
+    "subcategory": "memory"
   }
 ]
