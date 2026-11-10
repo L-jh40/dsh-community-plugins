@@ -1342,5 +1342,17 @@
     "repo": "https://github.com/JerryLiu369/agent-web-search",
     "category": "tools",
     "subcategory": "api"
+  },
+  {
+    "id": "slumberpavilion",
+    "name": "沉眠阁",
+    "nameEn": "Slumber Pavilion",
+    "author": "AngleNaris",
+    "description": "把 DSH 里已归档会话的日志与投影记录搬出加载路径，装好后约 15 秒开始自动搬移；提供归档、读取、还原、删除五个工具，其中 archive_delete 不可恢复且没有二次确认，启用前建议先备份会话。",
+    "descriptionEn": "Moves archived sessions' logs and projection records out of the load path, starting automatically about 15 seconds after the plugin loads. Ships archive, read, restore and delete tools; archive_delete is irreversible and asks for no second confirmation, so back up sessions before enabling.",
+    "repo": "https://github.com/AngleNaris/slumberpavilion",
+    "npm": "slumberpavilion",
+    "category": "utility",
+    "subcategory": "cleanup"
   }
 ]
