@@ -44,6 +44,11 @@ describe('community.json index contract', () => {
     }
   })
 
+  it('keeps entries in ascending id order', () => {
+    const ids = (entries as Array<{ id: string }>).map((e) => e.id)
+    expect(ids).toEqual([...ids].sort())
+  })
+
   it('keeps entry ids unique', () => {
     const ids = (entries as Array<{ id: string }>).map((e) => e.id)
     expect(new Set(ids).size).toBe(ids.length)
