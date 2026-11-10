@@ -1296,5 +1296,16 @@
     "npm": "dsh-cost-voice",
     "category": "utility",
     "subcategory": "notify"
+  },
+  {
+    "id": "dsh-plugin-restart-button",
+    "name": "悬浮重启按钮",
+    "nameEn": "Floating Restart Button",
+    "author": "NYSM803",
+    "description": "在 dsh Web GUI 上加一个可拖动的悬浮重启按钮（仅 Windows 桌面应用）：点击确认后关闭并重新启动应用与 Host，关闭指令发出前可取消、超时会自动收手并说明原因；图标、底色、位置锁定都在设置里改。用 dsh web 起的 CLI 宿主上按钮会显示，但重启必然失败。",
+    "descriptionEn": "A draggable floating restart button for the dsh Web GUI (Windows desktop app only): confirm, then the app and its host close and come back on their own; cancelling works until the close request goes out, and a watchdog ends a restart that never takes effect. Icon, background colour and position lock live in Settings. On a dsh web CLI host the button renders but a restart always fails.",
+    "repo": "https://github.com/NYSM803/dsh-restart-button",
+    "category": "ui",
+    "subcategory": "panel"
   }
 ]
