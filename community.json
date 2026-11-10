@@ -1354,5 +1354,17 @@
     "npm": "slumberpavilion",
     "category": "utility",
     "subcategory": "cleanup"
+  },
+  {
+    "id": "dsh-assistant-photographer",
+    "name": "助理摄影师",
+    "nameEn": "Assistant Photographer",
+    "author": "kingxlyoung",
+    "description": "先与用户商量景别、机位、穿搭与光影，确认方案后再出图的助理摄影师插件：按角色档案在提示词层保持人物一致；需自备 ComfyUI 服务与至少一个 Checkpoint 模型，插件直连本机或远程 ComfyUI 生成图片。",
+    "descriptionEn": "Assistant photographer that plans the shot (framing, angle, styling, lighting) with you before generating: keeps characters consistent at the prompt level via character profiles. Requires your own ComfyUI service and at least one checkpoint model; generates through a local or remote ComfyUI.",
+    "repo": "https://github.com/kingxlyoung/dsh-assistant-photographer",
+    "npm": "dsh-assistant-photographer",
+    "category": "tools",
+    "subcategory": "model"
   }
 ]
