@@ -1366,5 +1366,17 @@
     "npm": "dsh-assistant-photographer",
     "category": "tools",
     "subcategory": "model"
+  },
+  {
+    "id": "dsh-llm-keypool",
+    "name": "多 Key 轮换池",
+    "nameEn": "LLM Key Pool",
+    "author": "NethielChou",
+    "description": "把 DSH 里已配置的供应商/模型组成有顺序的轮换池：当前路由额度用尽或遇到 429 限流时，同一轮内自动切到下一条可用路由（跨不同供应商切换；同一供应商内的多个模型不会互相兜底）；侧边栏面板可勾选、排序，并显示当前路由、冷却中的供应商与最近切换记录。",
+    "descriptionEn": "Puts already-configured provider/model routes into an ordered failover pool: when the current route runs out of quota or hits a 429 rate limit, the next healthy route from a different provider is used in the same turn (same-provider candidates are skipped). A sidebar panel lets you pick and order routes and shows the live route, cooling providers, and recent switches.",
+    "repo": "https://github.com/NethielChou/dsh-llm-keypool",
+    "npm": "@nethiel/dsh-llm-keypool",
+    "category": "tools",
+    "subcategory": "model"
   }
 ]
