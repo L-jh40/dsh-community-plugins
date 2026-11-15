@@ -661,6 +661,18 @@
     "subcategory": "reading"
   },
   {
+    "id": "dsh-liquid-glass",
+    "name": "液态玻璃",
+    "nameEn": "Liquid Glass",
+    "author": "Ultroncn",
+    "description": "主题背景：官方风格折叠设置、通透界面与本地图片/视频背景。支持 DeepSeek Harness 0.2.2-rc.2。",
+    "descriptionEn": "Theme backgrounds for DeepSeek Harness — translucent surfaces with image or local video backgrounds. Supports DeepSeek Harness 0.2.2-rc.2.",
+    "repo": "https://github.com/Ultroncn/dsh-liquid-glass",
+    "npm": "dsh-liquid-glass",
+    "category": "ui",
+    "subcategory": "render"
+  },
+  {
     "id": "dsh-llm-keypool",
     "name": "多 Key 轮换池",
     "nameEn": "LLM Key Pool",
