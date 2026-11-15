@@ -709,6 +709,18 @@
     "subcategory": "memory"
   },
   {
+    "id": "dsh-man-031",
+    "name": "Man！花了这么多钱！",
+    "nameEn": "Man! That much money!",
+    "author": "gongfpp",
+    "description": "每轮结束弹出科比冰红茶人物，离线播报本轮费用或 Token 用量；费用优先使用 dsh-cost-meter，不可用时按各请求原生用量与公开单价估算并标明来源。含二十句金额台词、四句 Token 台词，支持人民币/美元、三位小数四舍五入及自定义试听；无需在线语音服务或 API Key。代码按 MIT 授权；随包的科比人物图、图标与预制语音不随 MIT 授权再分发，仅限随插件个人非商业使用。",
+    "descriptionEn": "Shows a Kobe iced-tea side popup and reports per-turn costs or token counts with bundled offline audio. Uses dsh-cost-meter first, or estimates each request from native usage and public prices. Includes twenty cost phrases, four token phrases, CNY/USD, three-decimal rounding and custom previews; no runtime TTS service or API key. The code is MIT-licensed; the bundled Kobe portrait, icons and pre-made offline voice clips are not redistributed under that MIT grant and are for personal, non-commercial use with this plugin only.",
+    "repo": "https://github.com/gongfpp/dsh-man-031",
+    "npm": "dsh-man-031",
+    "category": "utility",
+    "subcategory": "notify"
+  },
+  {
     "id": "dsh-mcp-manager",
     "name": "MCP 管理器",
     "nameEn": "MCP Manager",
