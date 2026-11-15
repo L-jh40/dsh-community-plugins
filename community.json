@@ -224,6 +224,18 @@
     "subcategory": "policy"
   },
   {
+    "id": "dsh-better-classifier",
+    "name": "BetterClassifier 会话分类",
+    "nameEn": "BetterClassifier",
+    "author": "MakerFlyFly",
+    "description": "用嵌套虚拟文件夹、直接彩色标签和树形搜索整理 Web 侧栏项目与会话，不改变真实工作目录。正文检索使用 DSH 本地共享索引；仅实测原版 DSH 0.2.2-rc.2、Windows x64、Node.js >=24.9.0 和 web profile。",
+    "descriptionEn": "Organize Web sidebar projects and conversations with nested virtual folders, direct colored tags and tree-shaped search, without changing working directories. Content search uses DSH's local shared index. Tested only on stock DSH 0.2.2-rc.2, Windows x64, Node.js >=24.9.0 and the web profile.",
+    "repo": "https://github.com/MakerFlyFly/DSH-better-classifier",
+    "npm": "dsh-better-classifier",
+    "category": "ui",
+    "subcategory": "panel"
+  },
+  {
     "id": "dsh-breadboard",
     "name": "dsh-breadboard",
     "nameEn": "dsh-breadboard",
