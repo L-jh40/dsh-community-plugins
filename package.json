@@ -11,6 +11,8 @@
   "exports": {
     ".": "./lib/index.js",
     "./community.json": "./community.json",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/zh.json": "./locale/zh.json",
     "./package.json": "./package.json"
   },
   "dsh": {
@@ -67,6 +69,7 @@
     "lib",
     "cordis.patch.yml",
     "community.json",
+    "locale",
     "icon.svg"
   ],
   "repository": {
