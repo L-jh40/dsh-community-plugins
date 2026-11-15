@@ -164,6 +164,17 @@
     "subcategory": "context"
   },
   {
+    "id": "dsh-asl-workspace",
+    "name": "ASL 技能工作区",
+    "nameEn": "ASL Skill Workspace",
+    "author": "qihangzhang-272",
+    "description": "将 ASL Mode 与 Skill 呈现为可编辑 Mermaid 画板，提供完整文件树、Markdown 编辑和原生 DeepSeek 共享工具写回。实际使用需要完整 ASL Harness 仓库、核心与 Environment，并配置本地路径；未配置时可安全挂载并显示指引。Windows DSH 已验收，其他系统尚未实测。",
+    "descriptionEn": "An editable Mermaid workspace for ASL Modes and Skills, with a full file tree, Markdown editing and native DeepSeek writes through a shared tool. Use requires a complete ASL Harness checkout, core and Environment with local path configuration. Mounts safely before setup and shows configuration guidance. Verified on Windows DSH; other platforms are untested.",
+    "repo": "https://github.com/qihangzhang-272/dsh-asl",
+    "category": "ui",
+    "subcategory": "panel"
+  },
+  {
     "id": "dsh-assistant-photographer",
     "name": "助理摄影师",
     "nameEn": "Assistant Photographer",
