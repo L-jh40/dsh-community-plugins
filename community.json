@@ -1311,6 +1311,18 @@
     "subcategory": "api"
   },
   {
+    "id": "dsh-triage",
+    "name": "分诊台",
+    "nameEn": "Triage",
+    "author": "jjjjjjjjnnjnn",
+    "description": "装前判断与装后归因：一条命令说明插件为什么从你的组合里消失。默认只读——不安装到你的 profile、不卸载、不判安全；只有显式 `--apply` 才改配置，先备份、可 `--undo` 逐字节还原。",
+    "descriptionEn": "Pre-install judgement and post-install attribution: one command explains why a plugin disappeared from your composition. Read-only by default — it never installs into your profile, never removes, and never claims a plugin is safe; only an explicit `--apply` changes config, after a backup, and `--undo` restores the bytes.",
+    "repo": "https://github.com/jjjjjjjjnnjnn/dsh-triage",
+    "npm": "dsh-triage",
+    "category": "tools",
+    "subcategory": "dev"
+  },
+  {
     "id": "dsh-tui",
     "name": "dsh-TUI",
     "nameEn": "dsh-TUI",
