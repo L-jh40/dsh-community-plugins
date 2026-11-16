@@ -82,6 +82,18 @@
     "subcategory": "api"
   },
   {
+    "id": "dsh-ai-diagrams",
+    "name": "AI 图表",
+    "nameEn": "AI Diagrams",
+    "author": "xuedipiaofei",
+    "description": "在对话里生成编辑设计风格的图表：模型产出一个自包含 HTML（内联 SVG），聊天里直接渲染预览，可一键导出 SVG / PNG；内置 diagram-design skill（50 种图表类型），支持把 .drawio / Mermaid / Excalidraw / PlantUML 源文件重画成新图。不需要 Python，不需要 Playwright。",
+    "descriptionEn": "Editorial diagrams in the chat: the model writes one self-contained HTML file with inline SVG, the conversation previews it inline and exports SVG or PNG; it bundles the diagram-design skill (50 diagram types) and can redraw .drawio / Mermaid / Excalidraw / PlantUML sources. No Python and no Playwright.",
+    "repo": "https://github.com/xuedipiaofei/dsh-ai-diagrams",
+    "npm": "dsh-ai-diagrams",
+    "category": "tools",
+    "subcategory": "dev"
+  },
+  {
     "id": "dsh-ai-terminal-pet",
     "name": "AI 终端宠物浮窗",
     "nameEn": "AI Terminal Pet Overlay",
