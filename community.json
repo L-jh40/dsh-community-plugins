@@ -496,6 +496,18 @@
     "subcategory": "cleanup"
   },
   {
+    "id": "dsh-engramory",
+    "name": "Engramory 长期记忆",
+    "nameEn": "Engramory Long-Term Memory",
+    "author": "tinqiao-oss",
+    "description": "长期记忆插件：AI 记住的东西存成普通 markdown 文件（默认在 ~/.dsh/.engramory-memory/），随时能打开看、能改。对话里自动带上记忆索引 MEMORY.md（只列笔记名字），AI 要细节再去读那条笔记；通过 dsh 的文件工具写索引时，若写完后行数超过 200 行且比原来多、或字节数超过 25 KB 且比原来大，写入前拒绝并让 AI 先压缩（已超限时往小里改照常放行；shell 写入不在拦截范围内）。自带记什么、怎么记的规则，对话快要被压缩时提醒 AI 先存记忆；侧栏多一个只读的「记忆」页，标出索引里的坏链接和没进索引的笔记。可选大肥鱼模式，给陪聊角色记共同经历、约定和角色自己的变化。记忆索引会随对话发给所用的模型服务；只有点「检查更新」时才访问 npm 查版本号，其余时间不联网；卸载不删除记忆文件。",
+    "descriptionEn": "Long-term memory for dsh: what the AI remembers is kept as plain markdown files (by default in ~/.dsh/.engramory-memory/) that you can open and edit at any time. The memory index MEMORY.md, which lists only note names, is brought into the conversation automatically, and the AI opens a note when it needs the detail. A write through dsh's file tools that would leave the index over 200 lines or 25 KB, and longer on that count than before, is refused before it lands, and the AI is asked to compact first (a write that shrinks an over-cap index still goes through; shell writes are not intercepted). It ships its own rules for what to remember and how, reminds the AI to save what matters before dsh compacts a long conversation, and adds a read-only Memory page to the sidebar that flags broken index links and notes missing from the index. An optional companion mode lets a chat persona keep shared moments, upcoming plans and its own changes. The memory index is sent to your model provider as part of the conversation; the plugin goes online only when you click Check for updates, to read the latest version number from npm; uninstalling leaves the memory files in place.",
+    "repo": "https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin",
+    "npm": "dsh-engramory",
+    "category": "knowledge",
+    "subcategory": "memory"
+  },
+  {
     "id": "dsh-flash-presets",
     "name": "DSH Flash 精简预设",
     "nameEn": "DSH Flash Lean Presets",
