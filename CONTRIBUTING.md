@@ -51,6 +51,24 @@ Use Conventional Commits (`feat(community-plugins): ...`, `fix(...)`,
 messages. Keep changes to one entry per commit where practical so the diff is
 reviewable.
 
+## Retirement and re-listing
+
+When a listed plugin declares an incompatible `dsh.engines.dsh` range (for
+example a lower bound below `0.2.0-0`) and is retired from `community.json`,
+the retired catalog snapshot, commit history, and rationale live in this
+repository and its archive under `.agents/notes/implemented/process/`.
+
+Maintainers intentionally do not run bots to open mass notification issues across
+third-party plugin repositories or mass-mention every author: doing so creates
+unsolicited noise on archived or unmaintained repositories and risks GitHub
+automated-abuse limits.
+
+Once a plugin maintainer publishes a new npm release whose `dsh.engines.dsh`
+lower bound supports the active host line (preferring an open range such as
+`>=0.2.1-rc.2 <0.4.0-0`), the plugin can return to the Workshop catalog at any
+time by following [Adding or updating a plugin entry](#adding-or-updating-a-plugin-entry)
+in a pull request or registration issue.
+
 ## Release
 
 The version is per-repository: it advances here and no longer with the dsh-web

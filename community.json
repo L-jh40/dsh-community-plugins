@@ -1,5 +1,17 @@
 [
   {
+    "id": "bloomtutor-dsh",
+    "name": "BloomTutor 学习导师",
+    "nameEn": "BloomTutor",
+    "author": "Li-Evan",
+    "description": "一对一 AI 导师的 Skill 包：bloom-tutor 先写学习大纲，再在工作区每次写一篇 Markdown 课文，下一篇按你标的 ??? 和反馈来调整；另带六个 learn-* 学习方法 Skill，分别用类比已会的知识、判断学多深、领域地图、粗糙原型和讲回来检验来帮你学，learn-deep 一次跑完这五种。只有 Skill，没有工具和依赖。",
+    "descriptionEn": "A one-on-one AI tutor as Skills: bloom-tutor writes a syllabus, then one Markdown lesson at a time in your workspace, and shapes each next lesson from your ??? marks and feedback; six learn-* Skills teach through analogies to what you know, deciding how deep to go, field maps, rough prototypes and explaining it back, with learn-deep running all five. Skills only, no tools or dependencies.",
+    "repo": "https://github.com/Li-Evan/BloomTutor",
+    "npm": "bloomtutor-dsh",
+    "category": "knowledge",
+    "subcategory": "qa"
+  },
+  {
     "id": "client-resume-button",
     "name": "断点续跑按钮",
     "nameEn": "Resume Button",
@@ -47,6 +59,18 @@
     "subcategory": "render"
   },
   {
+    "id": "dsh-agent-lines",
+    "name": "角色线",
+    "nameEn": "Agent Lines",
+    "author": "Lencen",
+    "description": "为 DSH 建立长期角色线：稳定角色身份 + 可替换 Session、持久消息、结构化交接、退役/休眠和只读看板；把线当成岗位，不预设固定流程或 DAG。",
+    "descriptionEn": "Long-lived role lines for DSH: stable role identity plus a replaceable Session, durable messages, structured handoffs, retire/hibernate and a read-only board. Models positions, not a fixed workflow or DAG.",
+    "repo": "https://github.com/Lencen/dsh-agent-lines",
+    "npm": "dsh-agent-lines",
+    "category": "tools",
+    "subcategory": "dev"
+  },
+  {
     "id": "dsh-agent-plugins-market",
     "name": "Agent Plugins市场（兼容Claude Code Plugin）",
     "nameEn": "Agent Plugins Market",
@@ -68,6 +92,29 @@
     "repo": "https://github.com/JerryLiu369/agent-web-search",
     "category": "tools",
     "subcategory": "api"
+  },
+  {
+    "id": "dsh-ai-diagrams",
+    "name": "AI 图表",
+    "nameEn": "AI Diagrams",
+    "author": "xuedipiaofei",
+    "description": "在对话里生成编辑设计风格的图表：模型产出一个自包含 HTML（内联 SVG），聊天里直接渲染预览，可一键导出 SVG / PNG；内置 diagram-design skill（50 种图表类型），支持把 .drawio / Mermaid / Excalidraw / PlantUML 源文件重画成新图。不需要 Python，不需要 Playwright。",
+    "descriptionEn": "Editorial diagrams in the chat: the model writes one self-contained HTML file with inline SVG, the conversation previews it inline and exports SVG or PNG; it bundles the diagram-design skill (50 diagram types) and can redraw .drawio / Mermaid / Excalidraw / PlantUML sources. No Python and no Playwright.",
+    "repo": "https://github.com/xuedipiaofei/dsh-ai-diagrams",
+    "npm": "dsh-ai-diagrams",
+    "category": "tools",
+    "subcategory": "dev"
+  },
+  {
+    "id": "dsh-ai-terminal-pet",
+    "name": "AI 终端宠物浮窗",
+    "nameEn": "AI Terminal Pet Overlay",
+    "author": "jjjjjjjjnnjnn",
+    "description": "把 DeepSeek Harness 的会话状态接到 AI Terminal Pet 桌面浮窗：一个常驻置顶的小窗显示每个会话是在跑、在等你审批、出错还是已完成，并能与 Claude Code、OpenCode、Antigravity 的会话汇总在同一个面板里，点一下就跳到对应的终端窗口。仅 Windows：浮窗 exe 随包安装，不额外装 Go 工具链，没有 npm 依赖，浮窗缺失时插件也不会影响宿主。",
+    "descriptionEn": "Mirrors DeepSeek Harness session state onto the AI Terminal Pet desktop overlay: a small always-on-top Win32 window shows whether each session is working, waiting for approval, failed or finished, and it lists Claude Code, OpenCode and Antigravity sessions in the same panel, with a one-click jump to the terminal window. Windows only: the overlay exe ships inside the package, so no Go toolchain and no npm dependencies are needed, and the bundle cannot break the host when the overlay is missing.",
+    "repo": "https://github.com/jjjjjjjjnnjnn/ai-terminal-pet",
+    "category": "integration",
+    "subcategory": "bridge"
   },
   {
     "id": "dsh-annotation",
@@ -108,13 +155,25 @@
     "id": "dsh-archived-chats",
     "name": "归档管理",
     "nameEn": "Archive Management",
-    "author": "Ultronen",
-    "description": "按工作区管理已归档与未归档会话，支持独立范围正文搜索、只读预览、标签备注、ZIP 备份、来源分支关系图和永久删除确认与重试。最低要求 DeepSeek Harness 0.2.2-rc.1。",
-    "descriptionEn": "Workspace-based archive management with scoped content search, read-only previews, tags and notes, ZIP backups, lineage graphs, and confirmed permanent deletion with retries. Requires DeepSeek Harness 0.2.2-rc.1 or later.",
+    "author": "Ultroncn",
+    "description": "按工作区管理已归档与未归档会话，支持独立范围正文搜索、只读预览、标签备注、ZIP 备份、来源分支关系图和永久删除确认与重试。支持 DeepSeek Harness >=0.1.0-rc.7 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3，旧版宿主无需先升级 Harness 即可直接升级到最新插件。",
+    "descriptionEn": "Workspace-based archive management with scoped content search, read-only previews, tags and notes, ZIP backups, lineage graphs, and confirmed permanent deletion with retries. Supports DeepSeek Harness >=0.1.0-rc.7 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3; older Hosts can upgrade straight to the latest plugin without upgrading Harness first.",
     "repo": "https://github.com/Ultroncn/dsh-archived-chats",
     "npm": "dsh-archived-chats",
     "category": "utility",
     "subcategory": "cleanup"
+  },
+  {
+    "id": "dsh-artifacts",
+    "name": "产物架",
+    "nameEn": "Artifact Shelf",
+    "author": "modusensus",
+    "description": "侧边栏产物架：把会话交付过的图片、视频、文件和链接收进一处，按 SHA-256 内容哈希去重；五个分类标签带计数、关键词搜索、视频缩略图、灯箱查看、手动收藏链接、粘贴图片、上传文件（≤25MB）、首次启动回填历史会话日志，并提供 save_artifact 工具供模型主动收藏。",
+    "descriptionEn": "A sidebar artifact shelf: it collects the images, videos, files and links a session delivers into one panel, deduplicated by SHA-256 content hash. Five filter tabs with counts, keyword search, video thumbnails, a lightbox, manual link saving, image paste, uploads up to 25 MB, a one-time backfill of past session logs, and a save_artifact tool the model can call.",
+    "repo": "https://github.com/modusensus/dsh-artifacts",
+    "npm": "@modusensus/dsh-artifacts",
+    "category": "ui",
+    "subcategory": "panel"
   },
   {
     "id": "dsh-as-aistudio",
@@ -127,6 +186,17 @@
     "npm": "dsh-as-aistudio",
     "category": "tools",
     "subcategory": "context"
+  },
+  {
+    "id": "dsh-asl-workspace",
+    "name": "ASL 技能工作区",
+    "nameEn": "ASL Skill Workspace",
+    "author": "qihangzhang-272",
+    "description": "将 ASL Mode 与 Skill 呈现为可编辑 Mermaid 画板，提供完整文件树、Markdown 编辑和原生 DeepSeek 共享工具写回。实际使用需要完整 ASL Harness 仓库、核心与 Environment，并配置本地路径；未配置时可安全挂载并显示指引。Windows DSH 已验收，其他系统尚未实测。",
+    "descriptionEn": "An editable Mermaid workspace for ASL Modes and Skills, with a full file tree, Markdown editing and native DeepSeek writes through a shared tool. Use requires a complete ASL Harness checkout, core and Environment with local path configuration. Mounts safely before setup and shows configuration guidance. Verified on Windows DSH; other platforms are untested.",
+    "repo": "https://github.com/qihangzhang-272/dsh-asl",
+    "category": "ui",
+    "subcategory": "panel"
   },
   {
     "id": "dsh-assistant-photographer",
@@ -187,6 +257,30 @@
     "npm": "dsh-auto-review",
     "category": "security",
     "subcategory": "policy"
+  },
+  {
+    "id": "dsh-better-classifier",
+    "name": "BetterClassifier 会话分类",
+    "nameEn": "BetterClassifier",
+    "author": "MakerFlyFly",
+    "description": "用嵌套虚拟文件夹、直接彩色标签和树形搜索整理 Web 侧栏项目与会话，不改变真实工作目录。正文检索使用 DSH 本地共享索引；仅实测原版 DSH 0.2.2-rc.2、Windows x64、Node.js >=24.9.0 和 web profile。",
+    "descriptionEn": "Organize Web sidebar projects and conversations with nested virtual folders, direct colored tags and tree-shaped search, without changing working directories. Content search uses DSH's local shared index. Tested only on stock DSH 0.2.2-rc.2, Windows x64, Node.js >=24.9.0 and the web profile.",
+    "repo": "https://github.com/MakerFlyFly/DSH-better-classifier",
+    "npm": "dsh-better-classifier",
+    "category": "ui",
+    "subcategory": "panel"
+  },
+  {
+    "id": "dsh-braingames",
+    "name": "dsh-braingames",
+    "nameEn": "dsh-braingames",
+    "author": "hmhm2333",
+    "repo": "https://github.com/hmhm2333/dsh-braingames",
+    "description": "等 Agent 执行任务时，玩几分钟像素风认知训练小游戏。",
+    "descriptionEn": "Five pixel-art cognitive training games to play while your agent runs a task in DeepSeek Harness.",
+    "npm": "dsh-braingames",
+    "category": "ui",
+    "subcategory": "panel"
   },
   {
     "id": "dsh-breadboard",
@@ -449,6 +543,18 @@
     "subcategory": "chat"
   },
   {
+    "id": "dsh-engramory",
+    "name": "Engramory 长期记忆",
+    "nameEn": "Engramory Long-Term Memory",
+    "author": "tinqiao-oss",
+    "description": "长期记忆插件：AI 记住的东西存成普通 markdown 文件（默认在 ~/.dsh/.engramory-memory/），随时能打开看、能改。对话里自动带上记忆索引 MEMORY.md（只列笔记名字），AI 要细节再去读那条笔记；通过 dsh 的文件工具写索引时，若写完后行数超过 200 行且比原来多、或字节数超过 25 KB 且比原来大，写入前拒绝并让 AI 先压缩（已超限时往小里改照常放行；shell 写入不在拦截范围内）。自带记什么、怎么记的规则，对话快要被压缩时提醒 AI 先存记忆；侧栏多一个只读的「记忆」页，标出索引里的坏链接和没进索引的笔记。可选大肥鱼模式，给陪聊角色记共同经历、约定和角色自己的变化。记忆索引会随对话发给所用的模型服务；只有点「检查更新」时才访问 npm 查版本号，其余时间不联网；卸载不删除记忆文件。",
+    "descriptionEn": "Long-term memory for dsh: what the AI remembers is kept as plain markdown files (by default in ~/.dsh/.engramory-memory/) that you can open and edit at any time. The memory index MEMORY.md, which lists only note names, is brought into the conversation automatically, and the AI opens a note when it needs the detail. A write through dsh's file tools that would leave the index over 200 lines or 25 KB, and longer on that count than before, is refused before it lands, and the AI is asked to compact first (a write that shrinks an over-cap index still goes through; shell writes are not intercepted). It ships its own rules for what to remember and how, reminds the AI to save what matters before dsh compacts a long conversation, and adds a read-only Memory page to the sidebar that flags broken index links and notes missing from the index. An optional companion mode lets a chat persona keep shared moments, upcoming plans and its own changes. The memory index is sent to your model provider as part of the conversation; the plugin goes online only when you click Check for updates, to read the latest version number from npm; uninstalling leaves the memory files in place.",
+    "repo": "https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin",
+    "npm": "dsh-engramory",
+    "category": "knowledge",
+    "subcategory": "memory"
+  },
+  {
     "id": "dsh-flash-presets",
     "name": "DSH Flash 精简预设",
     "nameEn": "DSH Flash Lean Presets",
@@ -458,6 +564,18 @@
     "repo": "https://github.com/LarryE135/dsh-flash-presets",
     "category": "agent",
     "subcategory": "preset"
+  },
+  {
+    "id": "dsh-free-search",
+    "name": "免费搜索",
+    "nameEn": "Free Search",
+    "author": "DDDMUC",
+    "description": "免费多引擎网络搜索：37 个引擎可选，默认自动回退链实际覆盖 28 个（5 个 HTML SERP 引擎默认不参与，OpenAI / Gemini / Claude 与 Metaso 四个按次计费引擎只在显式点名时运行）；支持时间过滤、多源并发、平台搜索、web_fetch 与网页设置面板。启动时会向 cloudflare、ip.sb、ipinfo 探测出口地区来选择默认引擎，查询会发送给所选第三方引擎。安装后会把 profile 的 cordis.patch.yml 中 web.searchProvider 接管为 ddg、web.fetchProvider 接管为 fs-quality-fetch；停用或卸载不会自动还原，需要手动删除 - id: web 下的这两行，否则宿主会报 configured web provider \"ddg\" is not registered。与其它设置 searchProvider 的搜索插件互斥，最后生效的一层决定实际搜索。",
+    "descriptionEn": "Free multi-engine web search: 37 engines available, with 28 actually covered by the default auto-fallback chain (the 5 HTML SERP engines stay out by default, and the per-call billed OpenAI / Gemini / Claude / Metaso engines run only when explicitly named); time filtering, concurrent multi-source search, platform search, web_fetch and a web settings panel. On startup it probes the egress region via cloudflare, ip.sb and ipinfo to pick the default engine, and queries are sent to the selected third-party engines. Installation takes over web.searchProvider as ddg and web.fetchProvider as fs-quality-fetch in the profile's cordis.patch.yml; disabling or uninstalling does not restore them, so remove those two lines under - id: web or the host reports configured web provider \"ddg\" is not registered. It is mutually exclusive with other plugins that set searchProvider; the last applied layer decides the actual search.",
+    "repo": "https://github.com/DDDMUC/dsh-free-search",
+    "npm": "dsh-free-search",
+    "category": "tools",
+    "subcategory": "dev"
   },
   {
     "id": "dsh-friendly-steps",
@@ -577,6 +695,18 @@
     "subcategory": "qa"
   },
   {
+    "id": "dsh-jump",
+    "name": "跳跃导航",
+    "nameEn": "dsh-jump",
+    "author": "Lionad-Morotar",
+    "description": "点击与聚焦两组组合键：按下后 DSH Web 界面里每个可见的可交互目标都会浮出一个字母标签，敲标签即可点击或聚焦它，类似 Vimium；标签长度按候选数量每轮推导，Esc 退出。聚焦模式默认关闭，需在设置页录制和弦后启用，点击组合键也可在设置中修改。",
+    "descriptionEn": "Two chord modes, click and focus: press a chord to surface a letter label over every visible interactive target in the DSH web GUI, then type the label to click or focus it, Vimium-style; label length is derived per round from the candidate count and Escape exits. Focus mode ships disabled until you record a chord in settings, and the click chord is remappable there too.",
+    "repo": "https://github.com/Lionad-Morotar/dsh-jump",
+    "npm": "dsh-jump",
+    "category": "ui",
+    "subcategory": "panel"
+  },
+  {
     "id": "dsh-keenable",
     "name": "Keenable 联网搜索",
     "nameEn": "Keenable Web Search",
@@ -599,6 +729,18 @@
     "npm": "dsh-library",
     "category": "knowledge",
     "subcategory": "reading"
+  },
+  {
+    "id": "dsh-liquid-glass",
+    "name": "液态玻璃",
+    "nameEn": "Liquid Glass",
+    "author": "Ultroncn",
+    "description": "主题背景：官方风格折叠设置、通透界面与本地图片/视频背景。支持 DeepSeek Harness 0.2.2-rc.2。",
+    "descriptionEn": "Theme backgrounds for DeepSeek Harness — translucent surfaces with image or local video backgrounds. Supports DeepSeek Harness 0.2.2-rc.2.",
+    "repo": "https://github.com/Ultroncn/dsh-liquid-glass",
+    "npm": "dsh-liquid-glass",
+    "category": "ui",
+    "subcategory": "render"
   },
   {
     "id": "dsh-llm-keypool",
@@ -659,6 +801,18 @@
     "npm": "@tr1v3r/dsh-ltm",
     "category": "knowledge",
     "subcategory": "memory"
+  },
+  {
+    "id": "dsh-man-031",
+    "name": "Man！花了这么多钱！",
+    "nameEn": "Man! That much money!",
+    "author": "gongfpp",
+    "description": "每轮结束弹出科比冰红茶人物，离线播报本轮费用或 Token 用量；费用优先使用 dsh-cost-meter，不可用时按各请求原生用量与公开单价估算并标明来源。含二十句金额台词、四句 Token 台词，支持人民币/美元、三位小数四舍五入及自定义试听；无需在线语音服务或 API Key。代码按 MIT 授权；随包的科比人物图、图标与预制语音不随 MIT 授权再分发，仅限随插件个人非商业使用。",
+    "descriptionEn": "Shows a Kobe iced-tea side popup and reports per-turn costs or token counts with bundled offline audio. Uses dsh-cost-meter first, or estimates each request from native usage and public prices. Includes twenty cost phrases, four token phrases, CNY/USD, three-decimal rounding and custom previews; no runtime TTS service or API key. The code is MIT-licensed; the bundled Kobe portrait, icons and pre-made offline voice clips are not redistributed under that MIT grant and are for personal, non-commercial use with this plugin only.",
+    "repo": "https://github.com/gongfpp/dsh-man-031",
+    "npm": "dsh-man-031",
+    "category": "utility",
+    "subcategory": "notify"
   },
   {
     "id": "dsh-mcp-manager",
@@ -753,6 +907,18 @@
     "npm": "dsh-mnemon",
     "category": "knowledge",
     "subcategory": "memory"
+  },
+  {
+    "id": "dsh-multithread-downloader",
+    "name": "多线程下载器",
+    "nameEn": "Multithread Downloader",
+    "author": "NONON01",
+    "description": "在 DSH 内用 HTTP Range 分片并发下载文件：侧边栏面板、对话进度条、断点续传、自定义请求头、镜像回退、SHA-256 校验、限速与 Agent 工具。",
+    "descriptionEn": "Parallel HTTP Range downloads inside DSH with a sidebar panel, composer progress strip, resume, custom headers, mirrors, SHA-256 checks, rate limiting and an agent tool.",
+    "repo": "https://github.com/NONON01/dsh-multithread-downloader",
+    "npm": "dsh-multithread-downloader",
+    "category": "utility",
+    "subcategory": "net"
   },
   {
     "id": "dsh-notifier",
@@ -939,6 +1105,7 @@
     "description": "在 dsh Web GUI 上加一个可拖动的悬浮重启按钮（仅 Windows 桌面应用）：点击确认后关闭并重新启动应用与 Host，关闭指令发出前可取消、超时会自动收手并说明原因；图标、底色、位置锁定都在设置里改。用 dsh web 起的 CLI 宿主上按钮会显示，但重启必然失败。",
     "descriptionEn": "A draggable floating restart button for the dsh Web GUI (Windows desktop app only): confirm, then the app and its host close and come back on their own; cancelling works until the close request goes out, and a watchdog ends a restart that never takes effect. Icon, background colour and position lock live in Settings. On a dsh web CLI host the button renders but a restart always fails.",
     "repo": "https://github.com/NYSM803/dsh-restart-button",
+    "npm": "dsh-plugin-restart-button",
     "category": "ui",
     "subcategory": "panel"
   },
@@ -951,6 +1118,18 @@
     "descriptionEn": "Upgrade skill for plugin authors: one package carrying one corridor index that reads the caller declared DSH range and routes it to the matching closed corridor card, plus a zero-dependency seam scanner.",
     "repo": "https://github.com/PerryLink/dsh-plugin-upgrade",
     "npm": "dsh-plugin-upgrade",
+    "category": "tools",
+    "subcategory": "dev"
+  },
+  {
+    "id": "dsh-plugin-upgrader",
+    "name": "插件版本升级",
+    "nameEn": "Plugin Version Upgrader",
+    "author": "zuwenyin",
+    "description": "在插件页新增「版本」标签：一键与多选升级都走插件管理器自己的安装路径，默认就地替换依赖、不卸载插件、启用状态不丢（profile 改不了时才退回先卸载再装，日志写明走的是哪条）；每一步的用时、阶段、原始 pnpm 日志与取消；已发布版本列表（最多列最新 80 个）可一键切换，装不了的版本按你正在跑的 DSH 标出来并禁用；镜像落后于上游时列出缺口；安装源可自己选（官方源 / 大陆镜像 / 私有源，选择写进 profile）。",
+    "descriptionEn": "Adds a Versions tab to the Plugins page: on-demand one-click and multi-select upgrades run through the plugin manager's own install path and replace the dependency in place by default, so the bundle stays loaded and keeps its enabled state (only when the profile manifest cannot be rewritten does it fall back to uninstall-then-install, and the log says which path was taken); per-step elapsed time, phase, the raw pnpm log and cancel; the published version list (newest 80 shown) with one-click switching, where a version the running DSH cannot install is flagged and its button disabled; the versions a configured mirror is missing; and a user-selectable npm registry saved in the profile.",
+    "repo": "https://github.com/zuwenyin/dsh-plugin-upgrader",
+    "npm": "dsh-plugin-upgrader",
     "category": "tools",
     "subcategory": "dev"
   },
@@ -1000,6 +1179,18 @@
     "npm": "dsh-quick-ask",
     "category": "ui",
     "subcategory": "panel"
+  },
+  {
+    "id": "dsh-runninghub-plugin",
+    "name": "RunningHub 工作流",
+    "nameEn": "RunningHub Workflows",
+    "author": "achenjins",
+    "description": "调用你在 RunningHub 上保存的 ComfyUI 工作流生成图片、视频和音频。提供 runninghub_search（列出可用操作）与 runninghub_call（执行操作）两个模型工具：把工作流链接或 ID 发给 AI 即可辅助配置输入节点，也可在「插件」→「dsh-runninghub-plugin」配置面板中手动导入和编辑；任务可在后台运行，完成后通知并把结果带回对话。支持多个 RunningHub API Key 按国内站 / 海外站分池管理，余额不足时换用下一把 Key，可查询账户余额与排队情况，并内置可按工作流读写的提示词规范文档。需要自备 RunningHub API Key，运行工作流会消耗账户的 RH 币。",
+    "descriptionEn": "Runs the ComfyUI workflows you saved on RunningHub to generate images, video and audio. Two model tools, runninghub_search (lists the available actions) and runninghub_call (runs one), let the AI configure a workflow's input nodes from its link or ID; workflows can also be imported and edited by hand in the Plugins -> dsh-runninghub-plugin settings panel. Tasks can run in the background and report back with the results when they finish. Multiple RunningHub API keys are pooled separately for the China and international sites, a key that runs out of balance hands over to the next one, account balance and queue can be queried, and per-workflow prompt guideline docs can be read and edited. Requires your own RunningHub API key; running a workflow spends RH coins from that account.",
+    "repo": "https://github.com/achenjins/dsh-runninghub-plugin",
+    "npm": "dsh-runninghub-plugin",
+    "category": "integration",
+    "subcategory": "external-ai"
   },
   {
     "id": "dsh-score",
@@ -1062,6 +1253,18 @@
     "subcategory": "dev"
   },
   {
+    "id": "dsh-sidebar-suite",
+    "name": "侧栏布局套件",
+    "nameEn": "Sidebar Suite",
+    "author": "YONAN1269",
+    "description": "给 DSH 左侧栏加一条控制栏：把「工作区」和「会话」两组排成标签页或浮层，也可以切回完全不改动布局的官方默认；会话列表默认全部展开。同时管理临时会话——默认在退出 DSH 时删除，可在插件详情页改成每天定时清理，右键可以把单个临时会话保留为正式会话或立即删除。9 项配置在详情页都有图形开关，改配置文件约 3 秒生效、不用重启。",
+    "descriptionEn": "Adds one control bar to the DSH left sidebar: arrange the workspaces and sessions groups as tabs or as an overlay, or switch back to an official default layout that changes nothing; the session list stays fully expanded by default. Also manages temporary sessions — deleted when DSH quits by default, optionally swept on a daily schedule from the plugin detail page, and a right-click menu keeps one as a regular session or deletes it at once. All nine config keys have graphical switches, and config file edits apply in about three seconds without a restart.",
+    "repo": "https://github.com/YONAN1269/dsh-sidebar-suite",
+    "npm": "dsh-sidebar-suite",
+    "category": "ui",
+    "subcategory": "panel"
+  },
+  {
     "id": "dsh-skill-explorer",
     "name": "技能中心（Skill Explorer）",
     "nameEn": "Skill Explorer",
@@ -1092,6 +1295,18 @@
     "description": "从 GitHub 仓库搜索并安装 SKILL.md 技能：装到全局 / 当前项目 / 自定义目录，与内置 skill-filesystem 联动，装完即时生效；安装会把第三方仓库的 SKILL.md 原样写入技能根目录，只装信任的仓库。",
     "descriptionEn": "Search GitHub repositories and install their SKILL.md skills into the global, project, or a custom directory; hot-loads through the built-in skill-filesystem; installation copies a third-party repository's SKILL.md verbatim into a skills root — only install repositories you trust.",
     "repo": "https://github.com/Joey-K-tsubame/dsh-skill-install",
+    "category": "tools",
+    "subcategory": "dev"
+  },
+  {
+    "id": "dsh-skills-tools",
+    "name": "Skills 管理器",
+    "nameEn": "Skills Manager",
+    "author": "hxlog",
+    "description": "在 DSH 设置中从 Git 仓库导入 Agent Skills，按仓库分组管理，逐项启用或停用，展开查看 SKILL.md 正文；停用的技能不会注册进模型，仓库以只读快照保存。",
+    "descriptionEn": "Import Agent Skills from Git repositories into DSH settings, group them by repository, toggle each skill, and expand SKILL.md content; disabled skills are not registered with the model and repositories are kept as read-only snapshots.",
+    "repo": "https://github.com/hxlog/dsh-skills-tools",
+    "npm": "dsh-skills-tools",
     "category": "tools",
     "subcategory": "dev"
   },
@@ -1148,8 +1363,8 @@
     "name": "谢谢卡尔",
     "nameEn": "Thanks, Carl",
     "author": "gongfpp",
-    "description": "DSH Web 的任务完成彩蛋、可选常驻桌宠与本地喝水、吃饭、休息提醒。正常完成后按概率显示卡尔图片，失败、取消和中断不庆祝；默认概率 15%、冷却 30 分钟。不调用模型或系统通知，只在打开的页面工作，错过的提醒不补放。需要 HTTPS 或 localhost 及 Web Locks；代码 MIT，随包照片仅限随插件个人非商用。",
-    "descriptionEn": "Task-completion easter eggs, an optional resident pet, and local water, meal and break reminders for DSH Web. Shows Carl probabilistically after normal completion, never celebrating failures, cancellations or interruptions; defaults to 15% chance and a 30-minute cooldown. No model calls or system notifications; runs only in an open page, without replaying missed reminders. Requires HTTPS or localhost and Web Locks. Code is MIT; bundled photos are for personal, non-commercial use with this plugin only.",
+    "description": "DSH Web 刺猬卡尔桌宠，带 12 种预生成 AI 动作、摸摸互动、25/45 分钟专注、快捷菜单、可选边缘闲逛和本地喝水/吃饭/休息提醒。AI 动作不是原照片连拍，可关闭恢复原图；失败、取消和中断不庆祝，完成彩蛋默认概率 15%、冷却 30 分钟。不读聊天正文、不调用模型或系统通知，页面关闭不提醒，错过不补放。需 HTTPS 或 localhost 及 Web Locks；代码 MIT，照片及 AI 衍生素材仅限随插件个人非商用。",
+    "descriptionEn": "A Carl hedgehog companion for DSH Web with 12 pre-generated AI sprite actions, pat reactions, a 25/45-minute focus timer, quick menu, optional edge wandering and local water/meal/break reminders. AI sprites are not photographic burst captures and can be disabled to restore the original photo. Failures, cancellations and interruptions are never celebrated; completion easter eggs default to 15% chance and a 30-minute cooldown. No conversation-content reads, runtime model calls or system notifications; runs only in an open page without replaying missed reminders. Requires HTTPS or localhost and Web Locks. Code is MIT; photos and AI-derived artwork are for personal, non-commercial use with this plugin only.",
     "repo": "https://github.com/gongfpp/dsh-thanks-carl",
     "npm": "dsh-thanks-carl",
     "category": "utility",
@@ -1200,6 +1415,18 @@
     "npm": "dsh-translate",
     "category": "tools",
     "subcategory": "api"
+  },
+  {
+    "id": "dsh-triage",
+    "name": "分诊台",
+    "nameEn": "Triage",
+    "author": "jjjjjjjjnnjnn",
+    "description": "装前判断与装后归因：一条命令说明插件为什么从你的组合里消失。默认只读——不安装到你的 profile、不卸载、不判安全；只有显式 `--apply` 才改配置，先备份、可 `--undo` 逐字节还原。",
+    "descriptionEn": "Pre-install judgement and post-install attribution: one command explains why a plugin disappeared from your composition. Read-only by default — it never installs into your profile, never removes, and never claims a plugin is safe; only an explicit `--apply` changes config, after a backup, and `--undo` restores the bytes.",
+    "repo": "https://github.com/jjjjjjjjnnjnn/dsh-triage",
+    "npm": "dsh-triage",
+    "category": "tools",
+    "subcategory": "dev"
   },
   {
     "id": "dsh-tui",
@@ -1366,6 +1593,18 @@
     "subcategory": "qa"
   },
   {
+    "id": "dsh-workspace-tints",
+    "name": "工作区色阶",
+    "nameEn": "Workspace Tints",
+    "author": "Veduis",
+    "description": "为侧栏中的每个工作区从同一条由暖到冷的“白瓷”色阶取一个固定色调，轻染其标题行，并在其会话旁画一条细轨；工作区名作为分组标题，会话缩进其下；已完成但未读的会话整行染绿。强度可调，关闭染色后层级与完成提示仍在。",
+    "descriptionEn": "Gives every Workspace in the sidebar a stable tint from one warm-to-cool ramp of whites, washing its header and drawing a thin rail beside its Sessions. Workspace names become section headings with their Sessions indented beneath, and a Session that finished unread turns its whole row green. Intensity is adjustable, and the hierarchy plus the finished indicator survive with tints off.",
+    "repo": "https://github.com/Veduis/dsh-workspace-tints",
+    "npm": "dsh-workspace-tints",
+    "category": "ui",
+    "subcategory": "panel"
+  },
+  {
     "id": "dsh-worktime-board",
     "name": "牛马修仙看板",
     "nameEn": "Worktime Cultivation Board",
@@ -1401,6 +1640,30 @@
     "subcategory": "bridge"
   },
   {
+    "id": "rss-pal-dsh",
+    "name": "RSS Pal",
+    "nameEn": "RSS Pal",
+    "author": "MoreFreeze",
+    "description": "本地优先的 RSS/Atom 阅读器，支持全文搜索、批量标记已读、按需 AI 总结和原生伴读。",
+    "descriptionEn": "Local-first RSS/Atom reader with full-text search, bulk read marking, on-demand AI summaries and native reading companion.",
+    "repo": "https://github.com/morefreeze/dsh-plugin-rss-pal",
+    "npm": "rss-pal-dsh",
+    "category": "knowledge",
+    "subcategory": "reading"
+  },
+  {
+    "id": "session-chains",
+    "name": "交接鏈",
+    "nameEn": "Session Chains",
+    "author": "HildebrandYu",
+    "description": "把互相交接的對話自動聚成一條鏈：從交接提示詞判定、場次編號、就地改名、搜尋與拖拉多選歸鏈、置頂與封存、本場上下文與請求數讀數。每條鏈預設只顯示最近 5 場（可調 0–50，0＝全部列出），較舊的折成一行、點一下展開 —— 折疊不等於封存。自動交接、語音播報、工作區收合三項預設關閉，需到設定裡自行打開；自動編號會改寫既有會話標題，第一次要先按「套用」確認，卸載後不會自動還原，面板另有「還原全部原標題」入口。",
+    "descriptionEn": "Groups the sessions that hand off to each other into one chain in the DSH sidebar: chain detection from the handoff prompt, per-session numbering, in-place rename, search with drag and multi-select re-chaining, pinning and archiving, and a per-session context and request readout. Each chain shows only its 5 most recent sessions by default (configurable 0-50; 0 shows all) and folds the older ones into a single clickable row - folding is not archiving. Auto-handoff, voice announcements and workspace folding are off by default and must be enabled in settings; numbering rewrites existing session titles, asks for confirmation the first time, and is not reverted by uninstalling the plugin - the panel has a restore-all-original-titles action.",
+    "repo": "https://github.com/HildebrandYu/dsh-session-chains",
+    "npm": "session-chains",
+    "category": "tools",
+    "subcategory": "context"
+  },
+  {
     "id": "slumberpavilion",
     "name": "沉眠阁",
     "nameEn": "Slumber Pavilion",
@@ -1411,5 +1674,28 @@
     "npm": "slumberpavilion",
     "category": "utility",
     "subcategory": "cleanup"
+  },
+  {
+    "id": "smart-compaction",
+    "name": "智能压缩",
+    "nameEn": "Smart Compaction",
+    "author": "JoblessJoe",
+    "description": "让模型在安全时机自己压缩上下文：compact_now 工具基于 dsh 公开的 compactRegion() 接口，回合中途也可用；context_status 工具对照会话实际的上下文窗口报告真实 token 用量（需要 dsh-token-meter）。另外，待办事项标记为完成且用量超过 safePointRatio（默认 0.5）时会自动压缩。dsh 自带的 80% 阈值仍作为兜底。不改动 dsh 核心。安装不运行任何脚本，也无需额外步骤：在 web 配置的各 preset 中，插件通过 preset 注册表找到该 agent 自己的压缩服务。需要 dsh 0.2.0-rc.2 及以上。",
+    "descriptionEn": "Lets the model compact its own context at a safe point: a compact_now tool built on dsh's public compactRegion() API that works mid-turn, and a context_status tool reporting real token usage against the session's actual context window (needs dsh-token-meter). It also compacts automatically when a todo is marked completed and usage is past safePointRatio (default 0.5). dsh's built-in 80% trigger stays as the backstop. No core changes. Installing runs no scripts and needs no extra step: inside web-profile presets the plugin finds the agent's own compaction service through the preset registry. Requires dsh 0.2.0-rc.2+.",
+    "repo": "https://github.com/JoblessJoe/smart-compaction",
+    "npm": "smart-compaction",
+    "category": "tools",
+    "subcategory": "context"
+  },
+  {
+    "id": "travel-agent",
+    "name": "旅行模式 Travel Story",
+    "nameEn": "Travel Story Mode",
+    "author": "wang-bool",
+    "description": "把完整 Travel Story 旅行规划应用搬进 DSH：地图、时间线、播放整页接管，对话变浮窗；18 个 agent 工具覆盖地点搜索、天气预报、路线计算与行程编辑，消息自动注入当前界面上下文（「这一站」「第 5 天」可直接引用），自带 travel-story-planner skill。",
+    "descriptionEn": "Bundles the full Travel Story app into DSH as a Travel Mode: map, timeline and playback take over the page with chat as a floating panel; 18 agent tools cover place search, weather forecast, routing and itinerary editing, with live UI-context injection and a bundled travel-story-planner skill.",
+    "repo": "https://github.com/wang-bool/travel-story-dsh",
+    "category": "agent",
+    "subcategory": "preset"
   }
 ]
