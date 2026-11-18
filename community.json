@@ -1,5 +1,17 @@
 [
   {
+    "id": "bloomtutor-dsh",
+    "name": "BloomTutor 学习导师",
+    "nameEn": "BloomTutor",
+    "author": "Li-Evan",
+    "description": "一对一 AI 导师的 Skill 包：bloom-tutor 先写学习大纲，再在工作区每次写一篇 Markdown 课文，下一篇按你标的 ??? 和反馈来调整；另带六个 learn-* 学习方法 Skill，分别用类比已会的知识、判断学多深、领域地图、粗糙原型和讲回来检验来帮你学，learn-deep 一次跑完这五种。只有 Skill，没有工具和依赖。",
+    "descriptionEn": "A one-on-one AI tutor as Skills: bloom-tutor writes a syllabus, then one Markdown lesson at a time in your workspace, and shapes each next lesson from your ??? marks and feedback; six learn-* Skills teach through analogies to what you know, deciding how deep to go, field maps, rough prototypes and explaining it back, with learn-deep running all five. Skills only, no tools or dependencies.",
+    "repo": "https://github.com/Li-Evan/BloomTutor",
+    "npm": "bloomtutor-dsh",
+    "category": "knowledge",
+    "subcategory": "qa"
+  },
+  {
     "id": "client-resume-button",
     "name": "断点续跑按钮",
     "nameEn": "Resume Button",
