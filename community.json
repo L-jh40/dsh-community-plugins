@@ -1663,5 +1663,16 @@
     "npm": "smart-compaction",
     "category": "tools",
     "subcategory": "context"
+  },
+  {
+    "id": "travel-agent",
+    "name": "旅行模式 Travel Story",
+    "nameEn": "Travel Story Mode",
+    "author": "wang-bool",
+    "description": "把完整 Travel Story 旅行规划应用搬进 DSH：地图、时间线、播放整页接管，对话变浮窗；18 个 agent 工具覆盖地点搜索、天气预报、路线计算与行程编辑，消息自动注入当前界面上下文（「这一站」「第 5 天」可直接引用），自带 travel-story-planner skill。",
+    "descriptionEn": "Bundles the full Travel Story app into DSH as a Travel Mode: map, timeline and playback take over the page with chat as a floating panel; 18 agent tools cover place search, weather forecast, routing and itinerary editing, with live UI-context injection and a bundled travel-story-planner skill.",
+    "repo": "https://github.com/wang-bool/travel-story-dsh",
+    "category": "agent",
+    "subcategory": "preset"
   }
 ]
