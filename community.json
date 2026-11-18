@@ -259,6 +259,18 @@
     "subcategory": "panel"
   },
   {
+    "id": "dsh-braingames",
+    "name": "dsh-braingames",
+    "nameEn": "dsh-braingames",
+    "author": "hmhm2333",
+    "repo": "https://github.com/hmhm2333/dsh-braingames",
+    "description": "等 Agent 执行任务时，玩几分钟像素风认知训练小游戏。",
+    "descriptionEn": "Five pixel-art cognitive training games to play while your agent runs a task in DeepSeek Harness.",
+    "npm": "dsh-braingames",
+    "category": "ui",
+    "subcategory": "panel"
+  },
+  {
     "id": "dsh-breadboard",
     "name": "dsh-breadboard",
     "nameEn": "dsh-breadboard",
